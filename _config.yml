@@ -1,0 +1,45 @@
+﻿title: "Toward Useful Systems for Useful Agentic AI"
+name: "Agentic AI Research Collaboration"
+description: "A collaboration of over 20 researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, UIUC, and Stanford working on industry-grade agentic AI systems."
+url: "https://Ai-Agents-Survey.github.io"
+baseurl: "/ai-agents-survey"
+permalink: pretty
+markdown: kramdown
+
+# Remote theme setup (GitHub Pages compatible)
+remote_theme: mmistakes/minimal-mistakes@4.27.3
+
+# Theme skin
+minimal_mistakes_skin: air
+
+# Plugins
+plugins:
+  - jekyll-include-cache
+
+# Site author
+author:
+  name: "UC Berkeley Research Team"
+  avatar: "/assets/images/logos/uc-berkeley-seal.png"
+  bio: "Agentic AI Research Collaboration"
+  location: "Berkeley, CA"
+  links:
+    - label: "UC Berkeley"
+      icon: "fas fa-university"
+      url: "https://berkeley.edu"
+
+# Site subtitle for header
+site_subtitle: "UC Berkeley • Stanford • IBM Research • Intesa Sanpaolo • UIUC"
+
+# SEO and Social
+twitter:
+  username: # Add if available
+og_image: "/assets/images/logos/uc-berkeley-seal.png"
+social:
+  type: Organization
+  name: "Agentic AI Research Collaboration"
+  links:
+    - "https://atajadod94.github.io/ai-agents-survey/"
+
+# Analytics (add if needed)
+# google_site_verification: "your-verification-code"
+# google_analytics: "your-tracking-id"

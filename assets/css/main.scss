@@ -1,0 +1,1576 @@
+---
+---
+
+@import "minimal-mistakes";
+
+// Berkeley Colors
+$berkeley-blue: #003262;
+$california-gold: #FDB515;
+$berkeley-light-blue: #4a90e2;
+$text-gray: #555;
+
+// Custom Berkeley overrides
+
+// Professional page load animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.research-card,
+.focus-item,
+.participation-card,
+.info-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+// Stagger the animations for cards
+.research-grid .research-card:nth-child(1) { animation-delay: 0.1s; }
+.research-grid .research-card:nth-child(2) { animation-delay: 0.2s; }
+.research-grid .research-card:nth-child(3) { animation-delay: 0.3s; }
+.research-grid .research-card:nth-child(4) { animation-delay: 0.4s; }
+.masthead {
+  background: $berkeley-blue !important;
+  border-bottom: 3px solid $california-gold !important;
+}
+
+// Desktop-specific refinements for homepage hero
+@media (min-width: 992px) {
+  .hero-section .hero-content {
+    gap: 2.5rem;
+  }
+  .hero-section .hero-text h1 {
+    line-height: 1.2;
+  }
+}
+.page__title {
+  color: $berkeley-blue !important;
+  border-bottom: 3px solid $california-gold !important;
+}
+
+// Allow hiding title on pages using `no-title` class (used by homepage)
+.page.no-title .page__title,
+.home .page__title {
+  display: none;
+}
+
+// Center the homepage and events page container and prevent any sidebar offset
+.home.layout--single .page,
+.home.layout--single .page__inner-wrap,
+.home.layout--single .page__content,
+.wide.layout--single .page,
+.wide.layout--single .page__inner-wrap,
+.wide.layout--single .page__content {
+  max-width: 1280px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+}
+
+.home.layout--single .sidebar,
+.wide.layout--single .sidebar {
+  display: none !important;
+}
+
+.btn--primary {
+  background-color: $berkeley-blue !important;
+  border-color: $berkeley-blue !important;
+}
+
+.btn--success {
+  background-color: $california-gold !important;
+  border-color: $california-gold !important;
+  color: $berkeley-blue !important;
+}
+
+.page__footer {
+  background: $berkeley-blue !important;
+  border-top: 3px solid $california-gold !important;
+  
+  .page__footer-copyright {
+    color: white !important;
+    opacity: 0.9;
+  }
+  
+  .page__footer-follow {
+    .social-icons {
+      .fab {
+        color: white;
+        
+        &:hover {
+          color: $california-gold;
+        }
+      }
+    }
+  }
+}
+
+// Team page styling
+.team-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+  .team-stats {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $berkeley-blue;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.institution-section {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  h3 {
+    color: $berkeley-blue;
+    border-bottom: 2px solid $california-gold;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    
+    i {
+      margin-right: 0.5rem;
+      color: $california-gold;
+    }
+  }
+}
+
+.team-category {
+  margin-bottom: 1.5rem;
+  
+  h4 {
+    color: $berkeley-blue;
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.team-list {
+  list-style: none;
+  padding-left: 0;
+  
+  li {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0;
+    
+    a {
+      color: $berkeley-blue;
+      text-decoration: none;
+      font-weight: 500;
+      
+      &:hover {
+        color: $california-gold;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.participation-section {
+  background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 10%) 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  
+  h3 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    margin-bottom: 2rem;
+    font-size: 1.1em;
+  }
+}
+
+.participation-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.option {
+  background: rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+  
+  i {
+    font-size: 2em;
+    color: $california-gold;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.9;
+  }
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  .btn {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .participation-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .research-focus .focus-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// About page styling
+.about-hero {
+  background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 10%) 100%);
+  color: white;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+  
+  .about-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .about-hero-text {
+    flex: 1;
+    
+    h1 {
+      color: white;
+      margin-bottom: 1rem;
+      font-size: 2.2em;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .about-subtitle {
+      font-size: 1.2em;
+      opacity: 0.9;
+      margin: 0;
+    }
+  }
+  
+  .about-hero-image {
+    flex: 1;
+    
+    .hero-image {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+  }
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.mission-section {
+  margin-bottom: 4rem;
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    
+    h2 {
+      color: $berkeley-blue;
+      font-size: 1.8em;
+      
+      i {
+        color: $california-gold;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  
+  .mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+  }
+}
+
+.research-focus {
+  margin-bottom: 4rem;
+  
+  .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .focus-item {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+    }
+    
+    .focus-icon {
+      margin-bottom: 1.5rem;
+      
+      i {
+        font-size: 3em;
+        color: $california-gold;
+      }
+    }
+    
+    h3 {
+      color: $berkeley-blue;
+      margin-bottom: 1rem;
+      font-size: 1.3em;
+    }
+    
+    p {
+      color: #666;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+}
+
+// Desktop-specific improvements for focus cards  
+@media (min-width: 768px) {
+  .research-focus .focus-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .research-focus .focus-grid {
+    gap: 3rem;
+  }
+  
+  .research-focus .focus-item {
+    padding: 2.5rem;
+    min-height: 300px;
+  }
+}
+
+.participation-section {
+  margin-bottom: 4rem;
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+    h2 {
+      color: $berkeley-blue;
+      font-size: 1.8em;
+      margin-bottom: 0.5rem;
+      
+      i {
+        color: $california-gold;
+        margin-right: 0.5rem;
+      }
+    }
+    
+    p {
+      color: #666;
+      font-size: 1.1em;
+    }
+  }
+  
+  .participation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .participation-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card-icon {
+      margin-bottom: 1.5rem;
+      
+      i {
+        font-size: 2.5em;
+        color: $california-gold;
+      }
+    }
+    
+    h3 {
+      color: $berkeley-blue;
+      margin-bottom: 1rem;
+      font-size: 1.2em;
+    }
+    
+    p {
+      color: #666;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+  
+  .participation-cta {
+    text-align: center;
+    
+    .btn {
+      font-size: 1.1em;
+      padding: 0.75rem 1.5rem;
+      
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.team-preview {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  
+  .team-preview-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .team-stats {
+    flex: 1;
+    
+    h2 {
+      color: $berkeley-blue;
+      margin-bottom: 1rem;
+      font-size: 1.8em;
+    }
+    
+    .team-count {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+    
+    .institution-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      
+      .badge {
+        background: $berkeley-blue;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9em;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  .team-preview-image {
+    flex: 1;
+    
+    .team-image {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+  }
+  
+  .team-cta {
+    text-align: center;
+    
+    .btn {
+      font-size: 1.1em;
+      padding: 0.75rem 1.5rem;
+      
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.contact-section {
+  background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 10%) 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  
+  .contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    
+    h2 {
+      color: white;
+      margin-bottom: 1rem;
+      font-size: 1.8em;
+      
+      i {
+        color: $california-gold;
+        margin-right: 0.5rem;
+      }
+    }
+    
+    p {
+      font-size: 1.1em;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    
+    .btn {
+      font-size: 1.1em;
+      padding: 0.75rem 1.5rem;
+      
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    .about-hero-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+    
+    .about-hero-text h1 {
+      font-size: 1.8em;
+    }
+  }
+  
+  .focus-grid,
+  .participation-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-preview {
+    .team-preview-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+    
+    .institution-badges {
+      justify-content: center;
+    }
+  }
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+  
+  p {
+    margin: 0;
+    color: white;
+    
+    a {
+      color: $california-gold;
+      text-decoration: none;
+      font-weight: 500;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Survey page styling
+.survey-section {
+  margin-bottom: 3rem;
+}
+
+.survey-card {
+  background: #f8f9fa;
+  border: 2px solid $berkeley-blue;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+  h3 {
+    color: $berkeley-blue;
+    margin-bottom: 1rem;
+    
+    i {
+      color: $california-gold;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.time-badge {
+  background: linear-gradient(135deg, $california-gold 0%, darken($california-gold, 10%) 100%);
+  color: $berkeley-blue;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  
+  i {
+    margin-right: 0.5rem;
+  }
+}
+
+.survey-info {
+  p {
+    font-size: 1.1em;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.survey-details {
+  margin-bottom: 1.5rem;
+  
+  h4 {
+    color: $berkeley-blue;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul {
+    margin-left: 1.5rem;
+    
+    li {
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+.survey-cta {
+  text-align: center;
+  
+  .survey-note {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    font-size: 1.1em;
+    padding: 0.75rem 1.5rem;
+    
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.interview-section {
+  background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 10%) 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  
+  h3 {
+    color: white;
+    margin-bottom: 1rem;
+    
+    i {
+      color: $california-gold;
+      margin-right: 0.5rem;
+    }
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1em;
+  }
+}
+
+.interview-details {
+  margin-bottom: 1.5rem;
+  
+  h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul {
+    margin-left: 1.5rem;
+    
+    li {
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+.participation-methods {
+  margin-top: 3rem;
+  background: linear-gradient(135deg, #fff8e1 0%, #fffde7 100%);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  border: 1px solid $california-gold;
+  box-shadow: 0 4px 12px rgba(253, 181, 21, 0.1);
+  
+  h3 {
+    text-align: center;
+    color: $berkeley-blue;
+    margin-bottom: 2rem;
+    font-size: 2em;
+    font-weight: 600;
+  }
+}
+
+.method-grid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.method-card {
+  background: white;
+  border: 2px solid $california-gold;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(253, 181, 21, 0.15);
+  transition: all 0.3s ease;
+  max-width: 600px;
+  width: 100%;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(253, 181, 21, 0.25);
+    border-color: darken($california-gold, 10%);
+  }
+  
+  i {
+    font-size: 3em;
+    color: $california-gold;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  
+  h4 {
+    color: $berkeley-blue;
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+  
+  p {
+    color: #555;
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 2rem;
+  
+  .btn {
+    font-size: 1.1em;
+    padding: 0.75rem 1.5rem;
+    
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.footer-note {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid $california-gold;
+  
+  p {
+    margin: 0;
+    font-size: 1.1em;
+    color: $berkeley-blue;
+  }
+}
+
+@media (max-width: 768px) {
+  .method-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .survey-card,
+  .interview-section {
+    padding: 1.5rem;
+  }
+}
+
+// Home page styling
+.hero-section {
+  background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 15%) 100%);
+  color: white;
+  padding: 3rem 0;
+  text-align: left;
+  margin-bottom: 3rem;
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  
+  .hero-logo {
+    flex-shrink: 0;
+    
+    .berkeley-logo {
+      width: 120px !important;
+      height: 120px !important;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      display: block;
+      border: 3px solid $california-gold;
+      border-radius: 50%;
+      background: white;
+      padding: 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+  }
+  
+  .hero-text {
+    text-align: center;
+    
+    h1 {
+      color: white;
+      margin-bottom: 1rem;
+      font-size: 2.5em;
+      font-weight: 700;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      line-height: 1.3;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.3em;
+      opacity: 0.95;
+      margin: 0;
+      font-weight: 300;
+    }
+  }
+}
+
+.intro-section {
+  margin-bottom: 4rem;
+  
+    .institution-logos {
+    display: flex;
+      justify-content: center;
+    align-items: center;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    flex-wrap: wrap;
+    
+    .institution-logo {
+        height: 70px;
+      width: auto;
+        opacity: 0.9;
+      transition: all 0.3s ease;
+        filter: grayscale(20%);
+      border-radius: 8px;
+      
+      &:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      }
+    }
+  }
+  
+  .mission-statement {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    
+    h2 {
+      color: $berkeley-blue;
+      margin-bottom: 1.5rem;
+      font-size: 1.8em;
+    }
+    
+    p {
+      font-size: 1.15em;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      color: $text-gray;
+      font-weight: 400;
+    }
+  }
+}
+
+.research-areas-section {
+  margin-bottom: 4rem;
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+    h2 {
+      color: $berkeley-blue;
+      margin-bottom: 0.5rem;
+      font-size: 1.8em;
+    }
+    
+    p {
+      color: #666;
+      font-size: 1.1em;
+    }
+  }
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Desktop-specific improvements for research cards
+@media (min-width: 768px) {
+  .research-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .research-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+.research-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+  }
+  
+  .research-icon {
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+    
+    i {
+      font-size: 3em;
+      color: $california-gold;
+      background: linear-gradient(135deg, $california-gold 0%, darken($california-gold, 10%) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      transition: all 0.3s ease;
+    }
+  }
+  
+  &:hover .research-icon {
+    transform: scale(1.1);
+  }
+  
+  h3 {
+    color: $berkeley-blue;
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 3rem 0;
+  text-align: center;
+  border-top: 3px solid $california-gold;
+  
+  .cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+    
+    h2 {
+      color: $berkeley-blue;
+      margin-bottom: 1rem;
+      font-size: 1.8em;
+    }
+    
+    p {
+      color: #666;
+      font-size: 1.1em;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    .btn {
+      font-size: 1.1em;
+      padding: 0.75rem 1.5rem;
+      flex: 1;
+      min-width: 180px;
+      max-width: 220px;
+      
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .hero-text {
+      text-align: center;
+      
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  }
+  
+  .institution-logos {
+    gap: 1rem !important;
+    
+    .institution-logo {
+      height: 40px !important;
+    }
+  }
+  
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    
+    .btn {
+      flex: none;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+// Events page styling
+.events-hero {
+  background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 10%) 100%);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.events-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  
+  h1 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2.2em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    
+    i {
+      color: $california-gold;
+      margin-right: 0.5rem;
+    }
+  }
+  
+  .events-subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin: 0;
+  }
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-card {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+  
+  &.featured {
+    border: 2px solid $california-gold;
+    box-shadow: 0 6px 20px rgba(253, 181, 21, 0.2);
+  }
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-bottom: 1px solid #dee2e6;
+}
+
+.event-date {
+  text-align: center;
+  
+  .month {
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: $berkeley-blue;
+    text-transform: uppercase;
+  }
+  
+  .day {
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: $berkeley-blue;
+    line-height: 1;
+  }
+}
+
+.event-status {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  
+  &.featured-badge {
+    background: linear-gradient(135deg, $california-gold 0%, darken($california-gold, 10%) 100%);
+    color: $berkeley-blue;
+    
+    i {
+      margin-right: 0.25rem;
+    }
+  }
+  
+  &.upcoming-badge {
+    background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 10%) 100%);
+    color: white;
+    
+    i {
+      margin-right: 0.25rem;
+    }
+  }
+}
+
+.event-content {
+  padding: 1.5rem;
+  
+  h3 {
+    color: $berkeley-blue;
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+  }
+  
+  .event-location {
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    
+    i {
+      color: $california-gold;
+      margin-right: 0.5rem;
+    }
+  }
+  
+  .event-description {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+}
+
+.event-highlights,
+.event-features {
+  margin-bottom: 1.5rem;
+}
+
+.event-highlights h4 {
+  color: $berkeley-blue;
+  margin-bottom: 0.75rem;
+  font-size: 1.1em;
+}
+
+.event-highlights ul {
+  margin-left: 1.5rem;
+}
+
+.event-highlights li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.event-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.event-features .feature {
+  text-align: center;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.event-features .feature i {
+  display: block;
+  font-size: 1.5em;
+  color: $california-gold;
+  margin-bottom: 0.5rem;
+}
+
+.event-features .feature span {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: $berkeley-blue;
+}
+
+.event-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.event-actions .btn {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+}
+
+.event-actions .btn i {
+  margin-right: 0.5rem;
+}
+
+.events-info-section {
+  margin-bottom: 4rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+}
+
+.info-icon {
+  margin-bottom: 1.5rem;
+}
+
+.info-icon i {
+  font-size: 3em;
+  color: $california-gold;
+}
+
+.info-card h3 {
+  color: $berkeley-blue;
+  margin-bottom: 1rem;
+  font-size: 1.3em;
+}
+
+.info-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.past-events-section {
+  background: #f8f9fa;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+
+.past-events-section h2 {
+  text-align: center;
+  color: $berkeley-blue;
+  margin-bottom: 0.5rem;
+  font-size: 1.8em;
+}
+
+.past-events-section h2 i {
+  color: $california-gold;
+  margin-right: 0.5rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 3rem;
+}
+
+.past-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.past-event {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid $california-gold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.past-event h4 {
+  color: $berkeley-blue;
+  margin-bottom: 0.5rem;
+}
+
+.past-event-date {
+  color: $california-gold;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-bottom: 0.75rem;
+}
+
+.past-event p {
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contact-cta-section {
+  background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 10%) 100%);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.contact-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-cta-content h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.8em;
+}
+
+.contact-cta-content h2 i {
+  color: $california-gold;
+  margin-right: 0.5rem;
+}
+
+.contact-cta-content > p {
+  font-size: 1.1em;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-method {
+  text-align: center;
+}
+
+.contact-method i {
+  font-size: 2.5em;
+  color: $california-gold;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.contact-method h4 {
+  color: white;
+  margin-bottom: 0.75rem;
+  font-size: 1.2em;
+}
+
+.contact-method p {
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.btn--outline {
+  background: transparent !important;
+  border: 2px solid white !important;
+  color: white !important;
+}
+
+.btn--outline:hover {
+  background: white !important;
+  color: $berkeley-blue !important;
+  border-color: white !important;
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-actions {
+    flex-direction: column;
+  }
+  
+  .event-actions .btn {
+    flex: none;
+  }
+  
+  .event-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+  
+  .past-events-grid {
+    grid-template-columns: 1fr;
+  }
+}
