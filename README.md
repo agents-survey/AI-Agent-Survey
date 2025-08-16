@@ -3,7 +3,7 @@
 A collaborative research initiative website featuring over 20 researchers across UC Berkeley, Stanford, IBM Research, UIUC, and Intesa Sanpaolo.
 
 ## 🌐 Live Site
-Visit: https://ai-agent-survey.github.io/AI-Agent-Survey/
+Visit: https://agents-survey.github.io/AI-Agent-Survey/
 
 ## 📋 Features
 - **Research Areas**: Key focus areas in agentic AI systems
@@ -38,7 +38,7 @@ Then open [http://localhost:4000](http://localhost:4000)
 - **Font Awesome** for icons
 
 ## 🔗 Quick Links
-- [Participate in Research](https://ai-agent-survey.github.io/AI-Agent-Survey/participate/)
-- [Meet the Team](https://ai-agent-survey.github.io/AI-Agent-Survey/team/)
-- [View Events](https://ai-agent-survey.github.io/AI-Agent-Survey/events/)
-- [About the Project](https://ai-agent-survey.github.io/AI-Agent-Survey/about/)
+- [Participate in Research](https://agents-survey.github.io/AI-Agent-Survey/participate/)
+- [Meet the Team](https://agents-survey.github.io/AI-Agent-Survey/team/)
+- [View Events](https://agents-survey.github.io/AI-Agent-Survey/events/)
+- [About the Project](https://agents-survey.github.io/AI-Agent-Survey/about/)
