@@ -1,0 +1,11 @@
+﻿main:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Team
+    url: /team/
+  - title: Events
+    url: /events/
+  - title: Participate
+    url: /participate/
