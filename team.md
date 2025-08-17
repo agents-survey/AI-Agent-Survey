@@ -30,7 +30,7 @@ permalink: /team/
 <div class="team-category">
 <h4>Postdoctoral Researcher</h4>
 <ul class="team-list">
-<li><a href="https://scholar.google.com/citations?user=vVHhYUEAAAAJ" target="_blank">Negar Arabzadeh</a> - Postdoctoral Researcher, EECS</li>
+<li><a href="https://www.negara.me/" target="_blank">Negar Arabzadeh</a> - Postdoctoral Researcher, EECS</li>
 </ul>
 </div>
 
