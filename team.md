@@ -78,10 +78,10 @@ permalink: /team/
 <div class="team-category">
 <h4>Visiting Scholars</h4>
 <ul class="team-list">
-<li><a href="https://www.linkedin.com/in/alessandro-basile-42a95815/" target="_blank">Alessandro Basile</a> - Visiting Scholar, Intesa Sanpaolo</li>
-<li><a href="https://www.linkedin.com/in/riccardo-cogo/" target="_blank">Riccardo Cogo</a> - Visiting Scholar, Intesa Sanpaolo</li>
-<li><a href="https://www.linkedin.com/in/emmanuele-lacavalla/" target="_blank">Emmanuele Lacavalla</a> - Visiting Scholar, Intesa Sanpaolo</li>
-<li><a href="https://www.linkedin.com/in/shuyi-yang-a08b36167/" target="_blank">Shuyi Yang</a> - Visiting Scholar, Intesa Sanpaolo</li>
+<li><a href="https://www.linkedin.com/in/abas42/" target="_blank">Alessandro Basile</a> - Visiting Scholar, Intesa Sanpaolo</li>
+<li><a href="https://www.linkedin.com/in/riccardo-cogo-9039a6150/" target="_blank">Riccardo Cogo</a> - Visiting Scholar, Intesa Sanpaolo</li>
+<li><a href="https://www.linkedin.com/in/emmanuele-lacavalla-4005a970/" target="_blank">Emmanuele Lacavalla</a> - Visiting Scholar, Intesa Sanpaolo</li>
+<li><a href="https://www.linkedin.com/in/shuyiyang/" target="_blank">Shuyi Yang</a> - Visiting Scholar, Intesa Sanpaolo</li>
 </ul>
 </div>
 </div>
