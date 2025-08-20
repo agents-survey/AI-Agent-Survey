@@ -19,7 +19,6 @@ classes: home wide no-title
 <img src="https://logo.clearbit.com/stanford.edu" alt="Stanford University" class="institution-logo" loading="lazy" crossorigin="anonymous">
 <img src="https://logo.clearbit.com/ibm.com" alt="IBM Research" class="institution-logo" loading="lazy" crossorigin="anonymous">
 <img src="https://brand.illinois.edu/wp-content/uploads/2024/02/Block-I-orange-white-background.png" alt="UIUC" class="institution-logo" loading="lazy">
-<img src="https://logo.clearbit.com/intesasanpaolo.com" alt="Intesa Sanpaolo" class="institution-logo" loading="lazy" crossorigin="anonymous">
 </div>
 </div>
 
