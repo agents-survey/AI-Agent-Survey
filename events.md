@@ -115,7 +115,7 @@ permalink: /events/
       </div>
       <h3>Stay Updated</h3>
       <p>Subscribe to our mailing list to receive notifications about upcoming events, workshops, and research symposiums.</p>
-      <a href="mailto:mme@berkeley.edu?subject=Subscribe to Updates" class="btn btn--success">
+      <a href="mailto:ai-agent-survey@googlegroups.com?subject=Subscribe to Updates" class="btn btn--success">
         <i class="fas fa-envelope-open"></i> Subscribe for Updates
       </a>
     </div>
@@ -126,7 +126,7 @@ permalink: /events/
       </div>
       <h3>Speaking Opportunities</h3>
       <p>Interested in presenting your research or industry insights at our events? We welcome proposals from the community.</p>
-      <a href="mailto:mme@berkeley.edu" class="btn btn--primary">
+      <a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--primary">
         <i class="fas fa-paper-plane"></i> Contact Organizers
       </a>
     </div>
