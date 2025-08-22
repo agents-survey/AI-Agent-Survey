@@ -135,6 +135,6 @@ permalink: /team/
 </div>
 
 <div class="contact-info">
-<p><strong>Questions or Comments?</strong> Contact us at <a href="mailto:negara@berkeley.edu">negara@berkeley.edu</a></p>
+<p><strong>Questions or Comments?</strong> Contact us at <a href="mailto:ai-agent-survey@googlegroups.com">ai-agent-survey@googlegroups.com</a></p>
 </div>
 </div>

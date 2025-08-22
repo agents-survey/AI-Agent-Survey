@@ -93,7 +93,7 @@ We are actively seeking input from researchers, industry practitioners, and orga
 </div>
 
 <div class="contact-section">
-<a href="mailto:mme@berkeley.edu" class="btn btn--primary">
+<a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--primary">
 <i class="fas fa-envelope"></i> Contact Us
 </a>
 </div>
