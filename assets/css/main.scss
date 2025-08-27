@@ -35,9 +35,31 @@ $text-gray: #555;
 .research-grid .research-card:nth-child(2) { animation-delay: 0.2s; }
 .research-grid .research-card:nth-child(3) { animation-delay: 0.3s; }
 .research-grid .research-card:nth-child(4) { animation-delay: 0.4s; }
-.masthead {
+// Fix navigation white background issue with higher specificity
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav {
   background: $berkeley-blue !important;
+  background-color: $berkeley-blue !important;
+}
+
+.masthead {
   border-bottom: 3px solid $california-gold !important;
+  box-shadow: none !important;
+}
+
+// Ensure navigation text is visible on Berkeley blue background
+.masthead .site-title {
+  color: white !important;
+}
+
+.masthead .site-nav .visible-links .masthead__menu-item a {
+  color: white !important;
+  
+  &:hover {
+    color: $california-gold !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
 }
 
 // Desktop-specific refinements for homepage hero
@@ -1125,7 +1147,74 @@ $text-gray: #555;
   }
 }
 
+// SavvyCal scheduling integration styling
+.scheduling-options {
+  margin-top: 2rem;
+  
+  .btn {
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+}
+
+.scheduling-embed {
+  margin-bottom: 2rem;
+  
+  .embed-note {
+    text-align: center;
+    color: #666;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  iframe {
+    max-width: 100%;
+    min-height: 600px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+  }
+}
+
+.external-link {
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+  
+  .external-note {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 0.9em;
+  }
+  
+  .btn {
+    display: inline-block;
+  }
+}
+
+// Responsive iframe for mobile
 @media (max-width: 768px) {
+  .scheduling-embed iframe {
+    height: 500px;
+    min-height: 500px;
+  }
+}
+
+// Mobile navigation enhancements
+@media (max-width: 768px) {
+  .masthead {
+    .site-title {
+      font-size: 1.1em !important;
+    }
+    
+    .site-nav .visible-links .masthead__menu-item a {
+      padding: 0.5rem 1rem !important;
+      font-size: 0.9em !important;
+    }
+  }
+  
   .hero-section {
     .hero-content {
       flex-direction: column;

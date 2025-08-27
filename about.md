@@ -127,7 +127,7 @@ permalink: /about/
 <div class="contact-content">
 <h2><i class="fas fa-envelope"></i> Questions or Comments?</h2>
 <p>We welcome your input and collaboration. Get in touch with our research team.</p>
-<a href="mailto:m.ellis@ibm.com" class="btn btn--primary">
+<a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--primary">
 <i class="fas fa-envelope"></i> Contact Us
 </a>
 </div>

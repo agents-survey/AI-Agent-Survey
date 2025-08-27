@@ -8,7 +8,7 @@ permalink: /team/
 ## Meet Our Collaborators
 
 <div class="team-intro">
-<p class="team-stats">20 researchers spanning 5 institutions and counting…</p>
+<p class="team-stats">20+ researchers spanning 5 institutions and counting…</p>
 <p>Our collaborative team brings together expertise from leading academic and industry institutions to advance the field of agentic AI systems.</p>
 </div>
 
@@ -30,7 +30,7 @@ permalink: /team/
 <div class="team-category">
 <h4>Postdoctoral Researcher</h4>
 <ul class="team-list">
-<li><a href="https://www.negara.me/" target="_blank">Negar Arabzadeh</a> - Postdoctoral Researcher, EECS</li>
+<li><a href="https://scholar.google.com/citations?user=vVHhYUEAAAAJ" target="_blank">Negar Arabzadeh</a> - Postdoctoral Researcher, EECS</li>
 </ul>
 </div>
 
@@ -78,10 +78,10 @@ permalink: /team/
 <div class="team-category">
 <h4>Visiting Scholars</h4>
 <ul class="team-list">
-<li><a href="https://www.linkedin.com/in/alessandro-basile-42a95815/" target="_blank">Alessandro Basile</a> - Visiting Scholar, Intesa Sanpaolo</li>
-<li><a href="https://www.linkedin.com/in/riccardo-cogo/" target="_blank">Riccardo Cogo</a> - Visiting Scholar, Intesa Sanpaolo</li>
-<li><a href="https://www.linkedin.com/in/emmanuele-lacavalla/" target="_blank">Emmanuele Lacavalla</a> - Visiting Scholar, Intesa Sanpaolo</li>
-<li><a href="https://www.linkedin.com/in/shuyi-yang-a08b36167/" target="_blank">Shuyi Yang</a> - Visiting Scholar, Intesa Sanpaolo</li>
+<li><a href="https://www.linkedin.com/in/abas42/" target="_blank">Alessandro Basile</a> - Visiting Scholar, Intesa Sanpaolo</li>
+<li><a href="https://www.linkedin.com/in/riccardo-cogo-9039a6150/" target="_blank">Riccardo Cogo</a> - Visiting Scholar, Intesa Sanpaolo</li>
+<li><a href="https://www.linkedin.com/in/emmanuele-lacavalla-4005a970/" target="_blank">Emmanuele Lacavalla</a> - Visiting Scholar, Intesa Sanpaolo</li>
+<li><a href="https://www.linkedin.com/in/shuyiyang/" target="_blank">Shuyi Yang</a> - Visiting Scholar, Intesa Sanpaolo</li>
 </ul>
 </div>
 </div>
@@ -135,6 +135,6 @@ permalink: /team/
 </div>
 
 <div class="contact-info">
-<p><strong>Questions or Comments?</strong> Contact us at <a href="mailto:m.ellis@ibm.com">m.ellis@ibm.com</a></p>
+<p><strong>Questions or Comments?</strong> Contact us at <a href="mailto:ai-agent-survey@googlegroups.com">ai-agent-survey@googlegroups.com</a></p>
 </div>
 </div>

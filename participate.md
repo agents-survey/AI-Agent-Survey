@@ -18,7 +18,7 @@ We are actively seeking input from researchers, industry practitioners, and orga
 <div class="survey-info">
 <div class="time-badge">
 <i class="fas fa-clock"></i>
-<span><strong>Quick Survey:</strong> Only 5 minutes to complete</span>
+<span><strong>Quick Survey:</strong> Can be completed in as little as 5 minutes</span>
 </div>
 
 <p>We're conducting a comprehensive survey to understand the current state and challenges of agentic AI deployment in industry settings.</p>
@@ -34,9 +34,9 @@ We are actively seeking input from researchers, industry practitioners, and orga
 </div>
 
 <div class="survey-cta">
-<p class="survey-note"><em>After the initial 5-minute survey, you can choose to participate in a longer, more detailed follow-up if you're interested.</em></p>
+<p class="survey-note"><em>After the initial quick survey (typically takes 5-10 minutes), you can choose to participate in a longer, more detailed follow-up if you're interested.</em></p>
 <a href="https://berkeley.qualtrics.com/jfe/form/SV_a8GbSp0tAu1cVdc" class="btn btn--primary" target="_blank">
-<i class="fas fa-play"></i> Start 5-Minute Survey
+<i class="fas fa-play"></i> Start Quick Survey
 </a>
 </div>
 </div>
@@ -44,7 +44,7 @@ We are actively seeking input from researchers, industry practitioners, and orga
 
 <div class="interview-section">
 <h3><i class="fas fa-microphone"></i> Expert Interviews</h3>
-<p>We're scheduling in-depth discussions with practitioners and researchers to dive deeper into specific challenges and opportunities.</p>
+<p>We're scheduling in-depth discussions with practitioners and researchers to dive deeper into specific challenges and opportunities. <strong>Select your preferred time from available slots and provide your contact information.</strong></p>
 
 <div class="interview-details">
 <h4>Topics include:</h4>
@@ -54,11 +54,30 @@ We are actively seeking input from researchers, industry practitioners, and orga
 <li>Integration challenges with existing infrastructure</li>
 <li>Ethical considerations and governance</li>
 </ul>
+
+<div class="interview-info">
+<p><em>📅 Duration: 1 hour | 💻 Format: Video call or phone | 🔒 All responses confidential</em></p>
+</div>
 </div>
 
-<a href="mailto:m.ellis@ibm.com" class="btn btn--success">
-<i class="fas fa-calendar"></i> Schedule an Interview
+<div class="scheduling-options">
+<div class="scheduling-embed">
+<p class="embed-note"><em>Schedule your interview directly below:</em></p>
+<iframe src="https://savvycal.com/p/negara/ai-agent-survey" 
+        width="100%" 
+        height="600" 
+        frameborder="0"
+        style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+</iframe>
+</div>
+
+<div class="external-link">
+<p class="external-note"><em>Prefer to open in a new window?</em></p>
+<a href="https://savvycal.com/p/negara/ai-agent-survey" class="btn btn--outline" target="_blank" rel="noopener">
+<i class="fas fa-external-link-alt"></i> Open in New Tab
 </a>
+</div>
+</div>
 </div>
 </div>
 
@@ -74,7 +93,7 @@ We are actively seeking input from researchers, industry practitioners, and orga
 </div>
 
 <div class="contact-section">
-<a href="mailto:m.ellis@ibm.com" class="btn btn--primary">
+<a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--primary">
 <i class="fas fa-envelope"></i> Contact Us
 </a>
 </div>

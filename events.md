@@ -55,36 +55,39 @@ permalink: /events/
   <div class="event-card featured">
     <div class="event-header">
       <div class="event-date">
-        <span class="month">Dec</span>
-        <span class="day">2024</span>
+        <span class="month">Aug</span>
+        <span class="day">5</span>
       </div>
       <div class="event-status featured-badge">
         <i class="fas fa-check-circle"></i> Completed
       </div>
     </div>
     <div class="event-content">
-      <h3>Agentic AI Systems Workshop</h3>
+      <h3>AI Agent SF Meetup #5 - Agents in Production</h3>
+      <p class="event-date-text">
+        <i class="fas fa-calendar"></i> Tuesday, August 5, 2025
+      </p>
       <p class="event-location">
-        <i class="fas fa-map-marker-alt"></i> Berkeley, CA
+        <i class="fas fa-map-marker-alt"></i> San Francisco, CA
       </p>
       <p class="event-description">
-        Our intensive workshop brought together leading researchers and industry experts to explore building production-ready agentic AI systems. This collaborative event connected perspectives from academia and industry to tackle real-world challenges.
+        Our collaboration team participated in this SF AI Agent Meetup featuring talks on enterprise-grade AI agent systems. Marquita Ellis from IBM Research presented "From Academic Innovation to Enterprise-Grade Systems for Impactful AI Agents" as part of our cross-institutional research initiative.
       </p>
       <div class="event-highlights">
-        <h4>Workshop Highlights:</h4>
+        <h4>Event Highlights:</h4>
         <ul>
-          <li>Technical deep-dives into agentic AI architectures</li>
-          <li>Industry case studies and deployment challenges</li>
-          <li>Hands-on sessions with cutting-edge tools</li>
-          <li>Networking with 20+ researchers across institutions</li>
+          <li>Lightning talk announcing our UC Berkeley, Stanford, UIUC, IBM & Intesa Sanpaolo collaboration</li>
+          <li>Invitation to participate in our cross-sector enterprise AI Agent survey</li>
+          <li>Talks on Agent Gateway, Llama Stack in Production, and OpenAI Agent SDK</li>
+          <li>Networking with 350+ AI agent developers and researchers</li>
         </ul>
       </div>
       <div class="event-actions">
         <a href="https://lu.ma/x16vikh7" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-external-link-alt"></i> View Event Details
         </a>
-        <a href="#contact" class="btn btn--success">
-          <i class="fas fa-envelope"></i> Stay Updated
+        <a href="{{ '/participate/' | relative_url }}" class="btn btn--success">
+          <i class="fas fa-clipboard-list"></i> Join Our Research
         </a>
       </div>
     </div>
@@ -151,7 +154,7 @@ permalink: /events/
       </div>
       <h3>Stay Updated</h3>
       <p>Subscribe to our mailing list to receive notifications about upcoming events, workshops, and research symposiums.</p>
-      <a href="mailto:m.ellis@ibm.com?subject=Subscribe to Updates" class="btn btn--success">
+      <a href="mailto:ai-agent-survey@googlegroups.com?subject=Subscribe to Updates" class="btn btn--success">
         <i class="fas fa-envelope-open"></i> Subscribe for Updates
       </a>
     </div>
@@ -162,7 +165,7 @@ permalink: /events/
       </div>
       <h3>Speaking Opportunities</h3>
       <p>Interested in presenting your research or industry insights at our events? We welcome proposals from the community.</p>
-      <a href="mailto:m.ellis@ibm.com" class="btn btn--primary">
+      <a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--primary">
         <i class="fas fa-paper-plane"></i> Contact Organizers
       </a>
     </div>
