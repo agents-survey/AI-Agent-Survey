@@ -13,6 +13,45 @@ permalink: /events/
 </div>
 
 <div class="events-grid">
+  <div class="event-card">
+    <div class="event-header">
+      <div class="event-date">
+        <span class="month">Oct</span>
+        <span class="day">13</span>
+      </div>
+      <div class="event-status upcoming-badge">
+        <i class="fas fa-clock"></i> Upcoming
+      </div>
+    </div>
+    <div class="event-content">
+      <h3>1st Workshop on Systems for Agentic AI (SAA '25)</h3>
+      <p class="event-location">
+        <i class="fas fa-map-marker-alt"></i> Seoul, Korea
+      </p>
+      <p class="event-description">
+        A premier workshop bringing together leading researchers and practitioners to share insights, challenges, and breakthroughs in building high-performance systems for generative and agentic AI. Held in conjunction with the 31st ACM Symposium on Operating Systems Principles (SOSP '25).
+      </p>
+      <div class="event-highlights">
+        <h4>Workshop Focus:</h4>
+        <ul>
+          <li>Foundations of Generative and Agentic AI Inference</li>
+          <li>System Architectures for Serving AI Agents</li>
+          <li>Cost- and Latency-Optimized Inference Techniques</li>
+          <li>Real-World Deployment Case Studies</li>
+          <li>Hardware-Aware System Optimizations</li>
+        </ul>
+      </div>
+      <div class="event-actions">
+        <a href="https://saa2025.github.io/" class="btn btn--primary" target="_blank" rel="noopener">
+          <i class="fas fa-external-link-alt"></i> Workshop Website
+        </a>
+        <a href="https://saa25.hotcrp.com" class="btn btn--outline" target="_blank" rel="noopener">
+          <i class="fas fa-paper-plane"></i> Submit Abstract
+        </a>
+      </div>
+    </div>
+  </div>
+
   <div class="event-card featured">
     <div class="event-header">
       <div class="event-date">
