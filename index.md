@@ -17,10 +17,9 @@ classes: home wide no-title
 <div class="institution-logos">
 <img src="{{ '/assets/images/logos/uc-berkeley-seal.png' | relative_url }}" alt="UC Berkeley" class="institution-logo" loading="lazy">
 <img src="https://logo.clearbit.com/stanford.edu" alt="Stanford University" class="institution-logo" loading="lazy" crossorigin="anonymous">
-<!-- waiting formal approval
-  <img src="https://logo.clearbit.com/ibm.com" alt="IBM Research" class="institution-logo" loading="lazy" crossorigin="anonymous">
--->
 <img src="https://brand.illinois.edu/wp-content/uploads/2024/02/Block-I-orange-white-background.png" alt="UIUC" class="institution-logo" loading="lazy">
+<img src="{{ '/assets/images/logos/ibm/IBM_logo®_pos_RGB.png' | relative_url }}" alt="IBM" class="institution-logo" loading="lazy" crossorigin="anonymous">
+<img src="{{ '/assets/images/logos/skylab/sky.png' | relative_url }}" alt="UC Berkeley Sky Lab" class="institution-logo" loading="lazy" crossorigin="anonymous">
 </div>
 </div>
 
