@@ -2,7 +2,7 @@
 name: "Agentic AI Research Collaboration"
 description: "A collaboration of over 20 researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, UIUC, and Stanford working on industry-grade agentic AI systems."
 url: "https://agents-survey.github.io"
-baseurl: ""
+baseurl: "/AI-Agent-Survey"
 permalink: pretty
 markdown: kramdown
 
@@ -38,7 +38,7 @@ social:
   type: Organization
   name: "Agentic AI Research Collaboration"
   links:
-    - "https://agents-survey.github.io/"
+    - "https://agents-survey.github.io/AI-Agent-Survey/"
 
 # Analytics (add if needed)
 # google_site_verification: "your-verification-code"
