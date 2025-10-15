@@ -13,14 +13,14 @@ permalink: /events/
 </div>
 
 <div class="events-grid">
-  <div class="event-card">
+  <div class="event-card featured">
     <div class="event-header">
       <div class="event-date">
         <span class="month">Oct</span>
         <span class="day">13</span>
       </div>
-      <div class="event-status upcoming-badge">
-        <i class="fas fa-clock"></i> Upcoming
+      <div class="event-status featured-badge">
+        <i class="fas fa-check-circle"></i> Completed
       </div>
     </div>
     <div class="event-content">
