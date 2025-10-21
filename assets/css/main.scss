@@ -978,12 +978,17 @@ $text-gray: #555;
       transition: all 0.3s ease;
         filter: grayscale(20%);
       border-radius: 8px;
-      
+
       &:hover {
         opacity: 1;
         filter: grayscale(0%);
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      }
+
+      // Make Berkeley RDI logo larger for better readability
+      &[alt="Berkeley RDI"] {
+        height: 90px;
       }
     }
   }
