@@ -20,6 +20,7 @@ classes: home wide no-title
 <img src="https://brand.illinois.edu/wp-content/uploads/2024/02/Block-I-orange-white-background.png" alt="UIUC" class="institution-logo" loading="lazy">
 <img src="{{ '/assets/images/logos/ibm/IBM_logo®_pos_RGB.png' | relative_url }}" alt="IBM" class="institution-logo" loading="lazy" crossorigin="anonymous">
 <img src="{{ '/assets/images/logos/skylab/sky.png' | relative_url }}" alt="UC Berkeley Sky Lab" class="institution-logo" loading="lazy" crossorigin="anonymous">
+<img src="{{ '/assets/images/logos/berkeley-rdi/berkeley-rdi.jpg' | relative_url }}" alt="Berkeley RDI" class="institution-logo" loading="lazy">
 </div>
 </div>
 
