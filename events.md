@@ -13,6 +13,47 @@ permalink: /events/
 </div>
 
 <div class="events-grid">
+<div class="event-card featured">
+    <div class="event-header">
+      <div class="event-date">
+        <span class="month">Dec</span>
+        <span class="day">4</span>
+      </div>
+      <div class="event-status featured-badge">
+        <i class="fas fa-check-circle"></i> Completed
+      </div>
+    </div>
+    <div class="event-content">
+      <h3>1st Report Publicly Available!</h3>
+      <!-- <p class="event-location">
+        <i class="fas fa-map-marker-alt">Online <a href=https://arxiv.org/abs/2512.04123v1> ArXiv </a></i> 
+      </p> -->
+      <p class="event-description">
+        Thrilled to release our latest report MAP: Measuring Agents in Production ⚙️🚀
+        <br/>2025 is the year of agents… <em>but do they actually work in the real world, or is it just hype?</em>
+
+      <br/><br/> A group of 25 researchers across <b>Berkeley, Stanford, UIUC, IBM</b>, and <b>Intesa Sanpaolo</b> investigated what makes agents deployable in the wild. We surveyed <b>306 agent builders</b> and ran <b>20 in-depth interview case studies</b> across <b>26 agent application domains</b> to understand the current landscape of production agents. 
+      </p>
+      <div class="event-highlights">
+        <h4>Findings Highlights:</h4>
+        <ul>
+        <li> 📈 Why agents? Productivity gains. </li>
+        <li> ➕ How are production agents built? Simple & controllable methods. </li>
+        <li> 🧑‍💻 How are production agents evaluated? Heavy human oversight. </li>
+        <li> 🛑 What are the top challenge now? Reliability. </li>
+        </ul>
+      </div>
+      <div class="event-actions">
+        <a href="https://arxiv.org/abs/2512.04123v1" class="btn btn--primary" target="_blank" rel="noopener">
+          <i class="fas fa-external-link-alt"></i> Read the Full Report
+        </a>
+        <a href="https://saa25.hotcrp.com" class="btn btn--outline" target="_blank" rel="noopener">
+          <i class="fas fa-paper-plane"></i> Submit Abstract
+        </a>
+      </div>
+    </div>
+  </div>
+
   <div class="event-card featured">
     <div class="event-header">
       <div class="event-date">
