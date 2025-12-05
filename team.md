@@ -37,24 +37,34 @@ permalink: /team/
 <div class="team-category">
 <h4>Graduate Students</h4>
 <ul class="team-list">
+<li><a href="https://www.linkedin.com/in/melissa-pan-b01a93154/" target="_blank">Melissa Pan</a> - Graduate Student, EECS</li>
 <li><a href="https://www.linkedin.com/in/lakshya-agrawal-64b4a9155/" target="_blank">Lakshya A Agrawal</a> - Graduate Student, EECS</li>
 <li><a href="https://xiaoyuan-liu.github.io/" target="_blank">Xiaoyuan Liu</a> - Graduate Student, EECS</li>
 <li><a href="https://www.linkedin.com/in/huanzhi-mao/" target="_blank">Huanzhi Mao</a> - Graduate Student, EECS</li>
-<li><a href="https://www.linkedin.com/in/sid-pallerla/" target="_blank">Sid Pallerla</a> - Graduate Student, EECS</li>
-<li><a href="https://www.linkedin.com/in/melissa-pan-b01a93154/" target="_blank">Melissa Pan</a> - Graduate Student, EECS</li>
+<li><a href="https://shulynnliu.com" target="_blank">Shu Liu</a> - Graduate Student, EECS</li>
 <li><a href="https://www.linkedin.com/in/tianneng-shi/" target="_blank">Tianneng Shi</a> - Graduate Student, EECS</li>
 <li><a href="https://www.linkedin.com/in/alexander-xiong-5a7b99192/" target="_blank">Alexander Xiong</a> - Graduate Student, EECS</li>
 </ul>
 </div>
+
+<div class="team-category">
+<h4>Undergraduate Students</h4>
+<ul class="team-list">
+<li><a href="https://www.linkedin.com/in/emmaxshen/" target="_blank">Emma Shen</a> - Undergraduate Student, EECS</li>
+<li><a href="https://www.linkedin.com/in/sid-pallerla-17aa76290/" target="_blank">Sid Pallerla</a> - Undergraduate Student, EECS</li>
+</ul>
+</div>
+
 </div>
 
 <div class="institution-section">
-<h3><i class="fas fa-rocket"></i> Stanford & Foundry</h3>
+<h3><i class="fas fa-rocket"></i> Stanford </h3>
 
 <div class="team-category">
 <h4>Student & CEO</h4>
 <ul class="team-list">
-<li><a href="https://www.linkedin.com/in/jared-quincy-davis/" target="_blank">Jared Quincy Davis</a> - Founder/CEO, Foundry</li>
+<li><a href="https://www.linkedin.com/in/jared-quincy-davis/" target="_blank">Jared Quincy Davis</a> - Founder/CEO, Mithril and PhD Student, Stanford CS</li>
+<li><a href="https://liana313.github.io" target="_blank">Liana Patel</a> - PhD Student, Stanford CS </li>
 </ul>
 </div>
 </div>
@@ -65,9 +75,9 @@ permalink: /team/
 <div class="team-category">
 <h4>Research Scientists</h4>
 <ul class="team-list">
-<li><a href="https://www.linkedin.com/in/diana-arroyo-37b06a7/" target="_blank">Diana Arroyo</a> - Research Scientist, IBM Research</li>
-<li><a href="https://www.linkedin.com/in/paul-castro-phd-6b6b6b2/" target="_blank">Paul Castro</a> - Research Scientist, IBM Research</li>
-<li><a href="https://www.linkedin.com/in/marquita-ellis/" target="_blank">Marquita Ellis</a> - Research Scientist, IBM Research</li>
+<li><a href="https://www.linkedin.com/in/marquita-ellis/" target="_blank">Marquita Ellis</a> - Staff Research Scientist, IBM Research</li>
+<li><a href="https://www.linkedin.com/in/diana-arroyo-37b06a7/" target="_blank">Diana Arroyo</a> - Research Software Engineer (Retired), IBM Research</li>
+<li><a href="https://www.linkedin.com/in/paul-castro-phd-6b6b6b2/" target="_blank">Paul Castro</a> - Senior Research Manager, IBM Research</li>
 </ul>
 </div>
 </div>
