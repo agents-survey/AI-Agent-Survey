@@ -11,37 +11,6 @@ We are actively seeking input from researchers, industry practitioners, and orga
 
 ## Current Research Activities
 
-<div class="survey-section">
-<div class="survey-card">
-<h3><i class="fas fa-clipboard-list"></i> Survey: Agentic AI in Industry</h3>
-
-<div class="survey-info">
-<div class="time-badge">
-<i class="fas fa-clock"></i>
-<span><strong>Quick Survey:</strong> Can be completed in as little as 5 minutes</span>
-</div>
-
-<p>We're conducting a comprehensive survey to understand the current state and challenges of agentic AI deployment in industry settings.</p>
-
-<div class="survey-details">
-<h4>What we're looking for:</h4>
-<ul>
-<li>Your experience with agentic AI systems</li>
-<li>Technical challenges you've encountered</li>
-<li>Industry use cases and applications</li>
-<li>Barriers to adoption and deployment</li>
-</ul>
-</div>
-
-<div class="survey-cta">
-<p class="survey-note"><em>After the initial quick survey (typically takes 5-10 minutes), you can choose to participate in a longer, more detailed follow-up if you're interested.</em></p>
-<a href="https://berkeley.qualtrics.com/jfe/form/SV_a8GbSp0tAu1cVdc" class="btn btn--primary" target="_blank">
-<i class="fas fa-play"></i> Start Quick Survey
-</a>
-</div>
-</div>
-</div>
-
 <div class="interview-section">
 <h3><i class="fas fa-microphone"></i> Expert Interviews</h3>
 <p>We're scheduling in-depth discussions with practitioners and researchers to dive deeper into specific challenges and opportunities. <strong>Select your preferred time from available slots and provide your contact information.</strong></p>
@@ -57,7 +26,6 @@ We are actively seeking input from researchers, industry practitioners, and orga
 
 <div class="interview-info">
 <p><em>📅 Duration: 1 hour | 💻 Format: Video call or phone | 🔒 All responses confidential</em></p>
-</div>
 </div>
 
 <div class="scheduling-options">
@@ -98,6 +66,38 @@ We are actively seeking input from researchers, industry practitioners, and orga
 </a>
 </div>
 </div>
+
+<!-- <div class="survey-section">
+<div class="survey-card">
+<h3><i class="fas fa-clipboard-list"></i> Survey: Agentic AI in Industry</h3>
+
+<div class="survey-info">
+The first survey is now closed. Thank you everyone who participated anonymously! Stay-tuned for future follow-up activities.
+<div class="time-badge">
+<i class="fas fa-clock"></i>
+<span><strong>Quick Survey:</strong> Can be completed in as little as 5 minutes</span>
+</div>
+
+<p>We're conducting a comprehensive survey to understand the current state and challenges of agentic AI deployment in industry settings.</p>
+
+<div class="survey-details">
+<h4>What we're looking for:</h4>
+<ul>
+<li>Your experience with agentic AI systems</li>
+<li>Technical challenges you've encountered</li>
+<li>Industry use cases and applications</li>
+<li>Barriers to adoption and deployment</li>
+</ul> 
+</div>
+
+<div class="survey-cta">
+<p class="survey-note"><em>After the initial quick survey (typically takes 5-10 minutes), you can choose to participate in a longer, more detailed follow-up if you're interested.</em></p>
+<a href="https://berkeley.qualtrics.com/jfe/form/SV_a8GbSp0tAu1cVdc" class="btn btn--primary" target="_blank">
+<i class="fas fa-play"></i> Start Quick Survey
+</a>
+</div> 
+</div>
+</div> -->
 
 <div class="footer-note">
 <p><em>Your participation is crucial to advancing the field of agentic AI. Together, we can build more useful and practical systems for real-world applications.</em></p>
