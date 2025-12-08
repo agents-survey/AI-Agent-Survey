@@ -48,6 +48,24 @@ $text-gray: #555;
   box-shadow: none !important;
 }
 
+// Logo styling in masthead
+.masthead .site-logo {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem;
+
+  img {
+    height: 40px;
+    width: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
 // Ensure navigation text is visible on Berkeley blue background
 .masthead .site-title {
   color: white !important;
