@@ -7,7 +7,7 @@ permalink: pretty
 markdown: kramdown
 
 # Site logo (appears in masthead)
-logo: "/assets/images/logos/skylab/MAP_logo.png"
+logo: "/assets/images/logos/skylab/MAP_logo_trans.png"
 
 # Remote theme setup (GitHub Pages compatible)
 remote_theme: mmistakes/minimal-mistakes@4.27.3
