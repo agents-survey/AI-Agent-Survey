@@ -1010,6 +1010,42 @@ $text-gray: #555;
       }
     }
   }
+
+  .latest-event-banner {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+
+    .latest-event-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, $california-gold 0%, darken($california-gold, 8%) 100%);
+      color: $berkeley-blue;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-size: 1.2em;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(253, 181, 21, 0.3);
+      transition: all 0.3s ease;
+      border: 2px solid darken($california-gold, 5%);
+
+      i {
+        margin-right: 0.5rem;
+        color: $berkeley-blue;
+      }
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(253, 181, 21, 0.4);
+        background: linear-gradient(135deg, lighten($california-gold, 5%) 0%, $california-gold 100%);
+        text-decoration: none;
+      }
+
+      &:active {
+        transform: translateY(-1px);
+      }
+    }
+  }
   
   .mission-statement {
     max-width: 800px;
@@ -1256,9 +1292,18 @@ $text-gray: #555;
   
   .institution-logos {
     gap: 1rem !important;
-    
+
     .institution-logo {
       height: 40px !important;
+    }
+  }
+
+  .latest-event-banner {
+    margin-top: 1.5rem;
+
+    .latest-event-btn {
+      font-size: 1em;
+      padding: 0.875rem 1.75rem;
     }
   }
   

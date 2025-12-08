@@ -22,6 +22,12 @@ classes: home wide no-title
 <img src="{{ '/assets/images/logos/skylab/sky.png' | relative_url }}" alt="UC Berkeley Sky Lab" class="institution-logo" loading="lazy" crossorigin="anonymous">
 <img src="{{ '/assets/images/logos/berkeley-rdi/berkeley-rdi.jpg' | relative_url }}" alt="Berkeley RDI" class="institution-logo" loading="lazy">
 </div>
+
+<div class="latest-event-banner">
+<a href="{{ '/events/' | relative_url }}" class="latest-event-btn">
+<i class="fas fa-star"></i> Latest Event: 1st Report Publicly Available!
+</a>
+</div>
 </div>
 
 <div class="intro-section">
