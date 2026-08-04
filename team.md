@@ -47,14 +47,6 @@ permalink: /team/
 </ul>
 </div>
 
-<div class="team-category">
-<h4>Undergraduate Students</h4>
-<ul class="team-list">
-<li><a href="https://www.linkedin.com/in/emmaxshen/" target="_blank">Emma Shen</a> - Undergraduate Student, EECS</li>
-<li><a href="https://www.linkedin.com/in/sid-pallerla-17aa76290/" target="_blank">Sid Pallerla</a> - Undergraduate Student, EECS</li>
-</ul>
-</div>
-
 </div>
 
 <div class="institution-section">
