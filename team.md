@@ -68,7 +68,6 @@ permalink: /team/
 <h4>Research Scientists</h4>
 <ul class="team-list">
 <li><a href="https://www.linkedin.com/in/marquita-ellis/" target="_blank">Marquita Ellis</a> - Staff Research Scientist, IBM Research</li>
-<li><a href="https://www.linkedin.com/in/diana-arroyo-37b06a7/" target="_blank">Diana Arroyo</a> - Research Software Engineer (Retired), IBM Research</li>
 <li><a href="https://www.linkedin.com/in/paul-castro-phd-6b6b6b2/" target="_blank">Paul Castro</a> - Senior Research Manager, IBM Research</li>
 </ul>
 </div>
