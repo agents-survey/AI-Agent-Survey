@@ -1,13 +1,27 @@
 ---
 ---
+// Berkeley Fonts
+// https://brand.berkeley.edu/visual-identity/typography/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// Berkeley Official Font Stacks
+$sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+// Minimal Mistakes font variable overrides
+$global-font-family: $sans-serif !default;
+$header-font-family: $sans-serif !default;
+$caption-font-family: $sans-serif !default;
 
 @import "minimal-mistakes";
 
 // Berkeley Colors
-$berkeley-blue: #003262;
+// https://brand.berkeley.edu/visual-identity/colors/
+$berkeley-blue: #002676;
 $california-gold: #FDB515;
-$berkeley-light-blue: #4a90e2;
-$text-gray: #555;
+$white: #FFFFFF;
+$blue-dark: #010133;
+$blue-medium: #004AAE;
+$gray-medium: #808080;
 
 // Custom Berkeley overrides
 
@@ -66,17 +80,99 @@ $text-gray: #555;
   }
 }
 
-// Ensure navigation text is visible on Berkeley blue background
-.masthead .site-title {
-  color: white !important;
+// Header & Navigation styling: White text/underlines, California Gold on hover
+.masthead,
+.greedy-nav {
+  a,
+  a:visited,
+  .masthead__menu-item a,
+  .visible-links a,
+  .hidden-links a,
+  button {
+    color: $white !important;
+    text-decoration-color: $white !important;
+    border-bottom-color: $white !important;
+    transition: all 0.2s ease;
+
+    // Underlines created with pseudo-elements
+    &::before,
+    &::after {
+      background-color: $white !important;
+      border-color: $white !important;
+      transition: all 0.2s ease;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $california-gold !important;
+      text-decoration-color: $california-gold !important;
+      border-bottom-color: $california-gold !important;
+      background: rgba(255, 255, 255, 0.1) !important;
+
+      // Hover state for pseudo-element underlines
+      &::before,
+      &::after {
+        background-color: $california-gold !important;
+        border-color: $california-gold !important;
+      }
+    }
+  }
+
+  // Keep site title strictly white on hover, click, and active states
+  .site-title {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white !important;
+      text-decoration: none !important;
+      border-bottom-color: transparent !important;
+      background: transparent !important;
+    }
+  }
+
+  // Ensure dropdown menu background matches header theme
+  .hidden-links {
+    background-color: $berkeley-blue !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
 }
 
-.masthead .site-nav .visible-links .masthead__menu-item a {
-  color: white !important;
-  
+// Mobile hamburger toggle button styling
+.greedy-nav__toggle {
+  border-color: $white !important;
+
+  // Hamburger lines
+  .navicon,
+  .navicon::before,
+  .navicon::after {
+    background-color: $white !important;
+    background: $white !important;
+    transition: all 0.2s ease;
+  }
+
+  // Icon fallback
+  i, svg {
+    color: $white !important;
+    fill: $white !important;
+    transition: all 0.2s ease;
+  }
+
   &:hover {
-    color: $california-gold !important;
-    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: $california-gold !important;
+
+    .navicon,
+    .navicon::before,
+    .navicon::after {
+      background-color: $california-gold !important;
+      background: $california-gold !important;
+    }
+
+    i, svg {
+      color: $california-gold !important;
+      fill: $california-gold !important;
+    }
   }
 }
 
@@ -1062,7 +1158,7 @@ $text-gray: #555;
       font-size: 1.15em;
       line-height: 1.7;
       margin-bottom: 1.5rem;
-      color: $text-gray;
+      color: $gray-medium;
       font-weight: 400;
     }
   }
