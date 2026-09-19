@@ -1837,3 +1837,73 @@ $gray-medium: #808080;
     grid-template-columns: 1fr;
   }
 }
+
+// 1) Full-bleed hero: the blue band spans the whole window width and sits
+//    directly under the header. The text inside stays aligned with the page.
+.hero-section,
+.events-hero,
+.about-hero {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+}
+
+// Remove the white gap between the header and the hero
+.home #main,
+.wide #main {
+  margin-top: 0;
+}
+
+// 100vw includes the scrollbar on some systems: avoid a horizontal scrollbar
+body {
+  overflow-x: hidden;
+}
+
+// 2) Make the logo readable on the blue header: white rounded background
+.masthead .site-logo img {
+  height: 48px;
+  padding: 4px;
+  background: $white;
+  border-radius: 8px;
+}
+
+// Yellow announcement strip above the header.
+// The markup lives at the top of _includes/masthead.html.
+// Berkeley Blue on California Gold is an approved pairing on brand.berkeley.edu.
+.announcement-bar {
+  background: $california-gold;
+  font-size: 0.8rem;
+
+  &__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0.3rem 1rem;
+  }
+
+  a {
+    color: $berkeley-blue;
+    font-weight: 500;
+    text-decoration: underline;
+
+    &:hover {
+      color: $blue-dark;
+    }
+  }
+}
+
+// The logo now lives in the hero, so hide it in the menu bar
+.masthead .site-logo {
+  display: none;
+}
+
+// Logo shown in the hero (added via CSS, so no HTML change is needed)
+.hero-section .hero-content::before {
+  content: "";
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border: 3px solid $california-gold;
+  border-radius: 50%;
+  background: $white url("{{ '/assets/images/logos/skylab/MAP_logo_trans.png' | relative_url }}") center / 75% no-repeat;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
