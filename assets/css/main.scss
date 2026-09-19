@@ -176,6 +176,16 @@ $gray-medium: #808080;
   }
 }
 
+// Highlight and underline active page in California Gold
+.masthead .greedy-nav a[aria-current="page"] {
+  color: $california-gold !important;
+
+  &::before {
+    background-color: $california-gold !important;
+    transform: scaleX(1) !important;
+  }
+}
+
 // Desktop-specific refinements for homepage hero
 @media (min-width: 992px) {
   .hero-section .hero-content {

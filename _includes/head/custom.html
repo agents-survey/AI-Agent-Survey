@@ -1,0 +1,24 @@
+<script>
+  // Mark the current page's entry in the header menu.
+  // The styling (California Gold text and underline) lives in main.scss:
+  // .masthead .greedy-nav a[aria-current="page"]
+  document.addEventListener("DOMContentLoaded", function () {
+    // "/about/", "/about", "/about.html" and "/about/index.html" all count as the same page
+    function normalize(path) {
+      var p = path.replace(/\/index\.html$/, "/").replace(/\.html$/, "").replace(/\/+$/, "");
+      return p || "/";
+    }
+
+    var current = normalize(window.location.pathname);
+
+    // Check both the visible menu and the overflow ("hidden") dropdown of the greedy nav
+    document.querySelectorAll(".masthead .visible-links a, .masthead .hidden-links a").forEach(function (link) {
+      // Only same-site links can match the current page
+      var samePage = link.host === window.location.host &&
+                     normalize(link.pathname) === current;
+      if (samePage) {
+        link.setAttribute("aria-current", "page");
+      }
+    });
+  });
+</script>
