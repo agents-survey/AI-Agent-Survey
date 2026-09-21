@@ -55,3 +55,16 @@
     </div>
   </div>
 </div>
+
+{% comment %}
+  It shows "Home / Page Title" and is skipped on the home page itself.
+{% endcomment %}
+{%- unless page.url == "/" -%}
+  <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+    <div class="breadcrumb-bar__inner">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <span aria-hidden="true">/</span>
+      <span>{{ page.title }}</span>
+    </div>
+  </nav>
+{%- endunless -%}

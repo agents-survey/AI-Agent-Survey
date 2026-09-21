@@ -1,7 +1,7 @@
 ﻿---
 title: About Our Research
 layout: single
-classes: wide
+classes: home wide no-title
 permalink: /about/
 ---
 

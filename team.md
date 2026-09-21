@@ -1,7 +1,7 @@
 ---
 title: "Our Research Team"
 layout: single
-classes: wide
+classes: home wide no-title
 permalink: /team/
 ---
 

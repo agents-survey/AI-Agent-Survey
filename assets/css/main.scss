@@ -22,6 +22,7 @@ $white: #FFFFFF;
 $blue-dark: #010133;
 $blue-medium: #004AAE;
 $gray-medium: #808080;
+$gray-light: #F2F2F2;
 
 // Custom Berkeley overrides
 
@@ -1906,4 +1907,99 @@ body {
   border-radius: 50%;
   background: $white url("{{ '/assets/images/logos/skylab/MAP_logo_trans.png' | relative_url }}") center / 75% no-repeat;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+// Gray breadcrumb bar under the header
+.breadcrumb-bar {
+  background: darken($gray-light, 6%);
+  font-size: 0.8rem;
+
+  &__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0.3rem 1rem;
+  }
+
+  a {
+    color: $blue-medium;
+    text-decoration: underline;
+
+    &:hover {
+      color: $berkeley-blue;
+    }
+  }
+
+  span:not([aria-hidden]) {
+    color: $blue-dark;
+  }
+
+  span[aria-hidden] {
+    margin: 0 0.5em;
+    color: $blue-dark;
+  }
+}
+
+// Split card: image on the left, blue text panel on the right
+.split-card {
+  display: flex;
+  overflow: hidden;
+  border-radius: 12px;
+  background: $berkeley-blue;
+  margin-bottom: 3rem;
+
+  &__image {
+    position: relative;
+    flex: 1 1 50%;
+    min-height: 320px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__body {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+
+    // Override the theme's default h2 look (border, top margin)
+    h2 {
+      margin: 0 0 1.5rem;
+      padding: 0;
+      border: 0;
+      font-size: 2.2em;
+      color: $white;
+    }
+
+    p {
+      margin: 0 0 2rem;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: $white;
+    }
+  }
+}
+
+// Stack image and text on small screens
+@media (max-width: 768px) {
+  .split-card {
+    flex-direction: column;
+
+    &__image {
+      min-height: 220px;
+    }
+
+    &__body {
+      padding: 2rem;
+    }
+  }
 }

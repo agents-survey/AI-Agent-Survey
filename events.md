@@ -1,7 +1,7 @@
 ---
 title: "Events & Workshops"
 layout: single
-classes: wide
+classes: home wide no-title
 permalink: /events/
 ---
 
