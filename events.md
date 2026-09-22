@@ -5,15 +5,18 @@ classes: wide no-title
 permalink: /events/
 ---
 
-<div class="events-hero">
-  <div class="events-hero-content">
-    <h1><i class="fas fa-calendar-alt"></i> Events & Workshops</h1>
-    <p class="events-subtitle">Our research collaboration events, workshops, and symposiums</p>
+<div class="split-card">
+  <div class="split-card__image">
+    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2070&auto=format&fit=crop" alt="Events and Workshops" class="hero-image" loading="lazy">
+  </div>
+  <div class="split-card__body">
+    <h2>Events &amp; Workshops</h2>
+    <p>Our research collaboration events, workshops, and symposiums</p>
   </div>
 </div>
 
 <div class="events-grid">
-<div class="event-card featured" id="latest-report">
+  <div class="event-card featured" id="latest-report">
     <div class="event-header">
       <div class="event-date">
         <span class="month">Dec</span>
@@ -25,29 +28,25 @@ permalink: /events/
     </div>
     <div class="event-content">
       <h3>1st Report Publicly Available!</h3>
-      <!-- <p class="event-location">
-        <i class="fas fa-map-marker-alt">Online <a href=https://arxiv.org/abs/2512.04123v1> ArXiv </a></i> 
-      </p> -->
       <p class="event-description">
         Thrilled to release our latest report MAP: Measuring Agents in Production ⚙️🚀
         <br/>2025 is the year of agents… <em>but do they actually work in the real world, or is it just hype?</em>
-
-      <br/><br/> A group of 25 researchers across <b>Berkeley, Stanford, UIUC, IBM</b>, and <b>Intesa Sanpaolo</b> investigated what makes agents deployable in the wild. We surveyed <b>306 agent builders</b> and ran <b>20 in-depth interview case studies</b> across <b>26 agent application domains</b> to understand the current landscape of production agents. 
+        <br/><br/> A group of 25 researchers across <b>Berkeley, Stanford, UIUC, IBM</b>, and <b>Intesa Sanpaolo</b> investigated what makes agents deployable in the wild. We surveyed <b>306 agent builders</b> and ran <b>20 in-depth interview case studies</b> across <b>26 agent application domains</b> to understand the current landscape of production agents. 
       </p>
       <div class="event-highlights">
         <h4>Findings Highlights:</h4>
         <ul>
-        <li> 📈 Why agents? Productivity gains. </li>
-        <li> ➕ How are production agents built? Simple & controllable methods. </li>
-        <li> 🧑‍💻 How are production agents evaluated? Heavy human oversight. </li>
-        <li> 🛑 What are the top challenge now? Reliability. </li>
+          <li> 📈 Why agents? Productivity gains. </li>
+          <li> ➕ How are production agents built? Simple &amp; controllable methods. </li>
+          <li> 🧑‍💻 How are production agents evaluated? Heavy human oversight. </li>
+          <li> 🛑 What are the top challenge now? Reliability. </li>
         </ul>
       </div>
       <div class="event-actions">
         <a href="https://arxiv.org/abs/2512.04123v1" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-external-link-alt"></i> Read the Full Report
         </a>
-        <a href="https://saa25.hotcrp.com" class="btn btn--outline" target="_blank" rel="noopener">
+        <a href="https://saa25.hotcrp.com" class="btn btn--success" target="_blank" rel="noopener">
           <i class="fas fa-paper-plane"></i> Submit Abstract
         </a>
       </div>
@@ -86,7 +85,7 @@ permalink: /events/
         <a href="https://saa2025.github.io/" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-external-link-alt"></i> Workshop Website
         </a>
-        <a href="https://saa25.hotcrp.com" class="btn btn--outline" target="_blank" rel="noopener">
+        <a href="https://saa25.hotcrp.com" class="btn btn--success" target="_blank" rel="noopener">
           <i class="fas fa-paper-plane"></i> Submit Abstract
         </a>
       </div>
@@ -117,7 +116,7 @@ permalink: /events/
       <div class="event-highlights">
         <h4>Event Highlights:</h4>
         <ul>
-          <li>Lightning talk announcing our UC Berkeley, Stanford, UIUC, IBM & Intesa Sanpaolo collaboration</li>
+          <li>Lightning talk announcing our UC Berkeley, Stanford, UIUC, IBM &amp; Intesa Sanpaolo collaboration</li>
           <li>Invitation to participate in our cross-sector enterprise AI Agent survey</li>
           <li>Talks on Agent Gateway, Llama Stack in Production, and OpenAI Agent SDK</li>
           <li>Networking with 350+ AI agent developers and researchers</li>
@@ -179,7 +178,7 @@ permalink: /events/
         <a href="https://rdi.berkeley.edu/events/agentic-ai-summit" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-external-link-alt"></i> View Summit Details
         </a>
-        <a href="https://rdi.berkeley.edu/events/agentic-ai-summit" class="btn btn--outline" target="_blank" rel="noopener">
+        <a href="https://rdi.berkeley.edu/events/agentic-ai-summit" class="btn btn--success" target="_blank" rel="noopener">
           <i class="fas fa-play"></i> Watch Recordings
         </a>
       </div>
@@ -187,72 +186,80 @@ permalink: /events/
   </div>
 </div>
 
-<div class="events-info-section">
-  <div class="info-grid">
-    <div class="info-card">
-      <div class="info-icon">
-        <i class="fas fa-calendar-check"></i>
-      </div>
-      <h3>Stay Updated</h3>
+<div class="feature-grid" style="margin-bottom: 3.5rem;">
+  <div class="feature-card feature-card--blue">
+    <div class="feature-card__body" style="text-align: center;">
+      <h3><i class="fas fa-calendar-check"></i> Stay Updated</h3>
       <p>Subscribe to our mailing list to receive notifications about upcoming events, workshops, and research symposiums.</p>
-      <a href="mailto:ai-agent-survey@googlegroups.com?subject=Subscribe to Updates" class="btn btn--success">
-        <i class="fas fa-envelope-open"></i> Subscribe for Updates
-      </a>
-    </div>
-    
-    <div class="info-card">
-      <div class="info-icon">
-        <i class="fas fa-chalkboard-teacher"></i>
+      <div style="margin-top: 1.5rem;">
+        <a href="mailto:ai-agent-survey@googlegroups.com?subject=Subscribe to Updates" class="btn btn--success">
+          <i class="fas fa-envelope-open"></i> Subscribe for Updates
+        </a>
       </div>
-      <h3>Speaking Opportunities</h3>
+    </div>
+  </div>
+
+  <div class="feature-card feature-card--darkblue">
+    <div class="feature-card__body" style="text-align: center;">
+      <h3><i class="fas fa-chalkboard-teacher"></i> Speaking Opportunities</h3>
       <p>Interested in presenting your research or industry insights at our events? We welcome proposals from the community.</p>
-      <a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--primary">
-        <i class="fas fa-paper-plane"></i> Contact Organizers
-      </a>
+      <div style="margin-top: 1.5rem;">
+        <a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--primary" style="border: 2px solid #ffffff;">
+          <i class="fas fa-paper-plane"></i> Contact Organizers
+        </a>
+      </div>
     </div>
-    
-
   </div>
 </div>
 
-<div class="past-events-section">
+<div class="plain-header" style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
   <h2><i class="fas fa-history"></i> Past Events</h2>
-  <p class="section-subtitle">Our previous workshops and conferences have brought together researchers from across the globe</p>
+  <p>Our previous workshops and conferences have brought together researchers from across the globe</p>
+</div>
+
+<div class="past-events-grid" style="margin-bottom: 3.5rem;">
+  <div class="past-event" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+    <h4>Research Collaboration Kickoff</h4>
+    <p class="past-event-date">Fall 2024</p>
+    <p>Initial meeting bringing together researchers from UC Berkeley, Stanford, IBM Research, UIUC, and Intesa Sanpaolo to establish collaboration frameworks.</p>
+  </div>
   
-  <div class="past-events-grid">
-    <div class="past-event">
-      <h4>Research Collaboration Kickoff</h4>
-      <p class="past-event-date">Fall 2024</p>
-      <p>Initial meeting bringing together researchers from UC Berkeley, Stanford, IBM Research, UIUC, and Intesa Sanpaolo to establish collaboration frameworks.</p>
-    </div>
-    
-    <div class="past-event">
-      <h4>Industry Requirements Workshop</h4>
-      <p class="past-event-date">Fall 2024</p>
-      <p>Deep-dive session with industry partners to identify key technical challenges and research priorities for production agentic AI systems.</p>
-    </div>
+  <div class="past-event" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+    <h4>Industry Requirements Workshop</h4>
+    <p class="past-event-date">Fall 2024</p>
+    <p>Deep-dive session with industry partners to identify key technical challenges and research priorities for production agentic AI systems.</p>
   </div>
 </div>
 
-<div id="contact" class="contact-cta-section">
-  <div class="contact-cta-content">
+<div id="contact" class="split-card split-card--light" style="display: block; padding: 2.5rem 2rem; margin: 2.5rem 0;">
+  <div class="split-card__body" style="display: block; padding: 0; text-align: center; margin-bottom: 2rem;">
     <h2><i class="fas fa-envelope"></i> Stay Connected</h2>
     <p>Don't miss out on our latest events and research updates. Join our community of researchers and industry professionals.</p>
-    
-    <div class="contact-methods">
-      <div class="contact-method">
-        <i class="fas fa-clipboard-list"></i>
-        <h4>Research Participation</h4>
+  </div>
+  
+  <div class="feature-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+    <div class="feature-card feature-card--blue" style="text-align: center; height: 100%;">
+      <div class="feature-card__body">
+        <h3><i class="fas fa-clipboard-list"></i> Research Participation</h3>
         <p>Participate in our ongoing research studies and surveys</p>
-        <a href="{{ '/participate/' | relative_url }}" class="btn btn--success">Join Research</a>
+        <div style="margin-top: 1.5rem;">
+          <a href="{{ '/participate/' | relative_url }}" class="btn btn--success">Join Research</a>
+        </div>
       </div>
-      
-      <div class="contact-method">
-        <i class="fas fa-users"></i>
-        <h4>Meet the Team</h4>
+    </div>
+    
+    <div class="feature-card feature-card--gold" style="text-align: center; height: 100%;">
+      <div class="feature-card__body">
+        <h3><i class="fas fa-users"></i> Meet the Team</h3>
         <p>Connect with researchers from our partner institutions</p>
-        <a href="{{ '/team/' | relative_url }}" class="btn btn--primary">View Team</a>
+        <div style="margin-top: 1.5rem;">
+          <a href="{{ '/team/' | relative_url }}" class="btn btn--primary">View Team</a>
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="footer-note">
+  <p><em>Questions or Comments? We welcome your input and collaboration. Get in touch with our research team at <a href="mailto:ai-agent-survey@googlegroups.com">ai-agent-survey@googlegroups.com</a>.</em></p>
 </div>
