@@ -2038,6 +2038,74 @@ body {
   }
 }
 
+.plain-header {
+  margin-bottom: 1.5rem;
+
+  h2 {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    border: 0;
+    font-size: 2.2em;
+    color: $blue-dark;
+
+    i {
+      color: $california-gold;
+      margin-right: 0.5rem;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: $blue-dark;
+  }
+}
+
+
+.plain-header h2 i {
+  color: $berkeley-blue;
+}
+
+.icon-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.icon-feature {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 38, 118, 0.1);
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(0, 38, 118, 0.08);
+    color: $berkeley-blue;
+    font-size: 1.4em;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2em;
+    color: $blue-dark;
+  }
+
+  p {
+    margin: 0;
+    color: $blue-dark;
+    line-height: 1.5;
+  }
+}
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -2165,5 +2233,22 @@ body {
         transform: translateX(4px);
       }
     }
+  }
+}
+
+.institution-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1.5rem;
+
+  .badge {
+    background: $white;
+    border: 1px solid rgba(0, 38, 118, 0.25);
+    color: $berkeley-blue;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
   }
 }
