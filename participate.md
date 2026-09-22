@@ -45,7 +45,7 @@ permalink: /participate/
     </div>
   </div>
 
-  <div class="feature-card feature-card--darkblue">
+  <div class="feature-card feature-card--darkblue" id="expert-interviews">
     <div class="feature-card__image">
       <img src="https://images.unsplash.com/photo-1554200876-980213841c94?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AI Research Interviews" class="hero-image" loading="lazy">
     </div>

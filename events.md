@@ -13,7 +13,7 @@ permalink: /events/
 </div>
 
 <div class="events-grid">
-<div class="event-card featured">
+<div class="event-card featured" id="latest-report">
     <div class="event-header">
       <div class="event-date">
         <span class="month">Dec</span>

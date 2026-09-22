@@ -26,7 +26,7 @@ classes: wide no-title
 </div>
 
 <div class="latest-event-banner">
-  <a href="{{ '/events/' | relative_url }}" class="latest-event-btn">
+  <a href="{{ '/events/' | relative_url }}#latest-report" class="latest-event-btn">
     <i class="fas fa-star"></i> Latest Event: 1st Report Publicly Available!
   </a>
 </div>
@@ -82,7 +82,7 @@ classes: wide no-title
 
 <div class="join-section">
   <h2>Join Our Research Initiative</h2>
-  <p>Help us advance the field of agentic AI through collaboration and participation. Share your experience, participate in our survey, or connect with our research team.</p>
+  <p>Help us advance the field of agentic AI through collaboration and participation. take your experience, participate in our survey, or connect with our research team.</p>
 
   <ul class="arrow-links-list">
     <li>
@@ -98,13 +98,13 @@ classes: wide no-title
       </a>
     </li>
     <li>
-      <a href="https://berkeley.qualtrics.com/jfe/form/SV_a8GbSp0tAu1cVdc" target="_blank" rel="noopener">
+      <a href="{{ '/participate/' | relative_url }}#current-survey">
         <i class="fas fa-arrow-right" aria-hidden="true"></i>
         <span>Take AI Agent Survey</span>
       </a>
     </li>
     <li>
-      <a href="{{ '/participate/#current-research-activities' | relative_url }}">
+      <a href="{{ '/participate/' | relative_url }}#expert-interviews">
         <i class="fas fa-arrow-right" aria-hidden="true"></i>
         <span>Schedule Interview</span>
       </a>
