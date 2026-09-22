@@ -1,23 +1,18 @@
 ---
 ---
-// Inspo: https://eecs.berkeley.edu/research/
 
-// Berkeley Fonts
-// https://brand.berkeley.edu/visual-identity/typography/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-// Berkeley Official Font Stacks
+// Variables & Theme Setup
 $sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 
-// Minimal Mistakes font variable overrides
 $global-font-family: $sans-serif !default;
 $header-font-family: $sans-serif !default;
 $caption-font-family: $sans-serif !default;
 
 @import "minimal-mistakes";
 
-// Berkeley Colors
-// https://brand.berkeley.edu/visual-identity/colors/
+// Color Palette
 $berkeley-blue: #002676;
 $california-gold: #FDB515;
 $white: #FFFFFF;
@@ -26,9 +21,7 @@ $blue-medium: #004AAE;
 $gray-medium: #808080;
 $gray-light: #F2F2F2;
 
-// Custom Berkeley overrides
-
-// Professional page load animation
+// Keyframe Animations
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -47,12 +40,12 @@ $gray-light: #F2F2F2;
   animation: fadeInUp 0.6s ease-out;
 }
 
-// Stagger the animations for cards
 .research-grid .research-card:nth-child(1) { animation-delay: 0.1s; }
 .research-grid .research-card:nth-child(2) { animation-delay: 0.2s; }
 .research-grid .research-card:nth-child(3) { animation-delay: 0.3s; }
 .research-grid .research-card:nth-child(4) { animation-delay: 0.4s; }
-// Fix navigation white background issue with higher specificity
+
+// Masthead & Navigation
 .masthead,
 .masthead__inner-wrap,
 .greedy-nav {
@@ -65,7 +58,6 @@ $gray-light: #F2F2F2;
   box-shadow: none !important;
 }
 
-// Logo styling in masthead
 .masthead .site-logo {
   display: inline-flex;
   align-items: center;
@@ -83,7 +75,6 @@ $gray-light: #F2F2F2;
   }
 }
 
-// Header & Navigation styling: White text/underlines, California Gold on hover
 .masthead,
 .greedy-nav {
   a,
@@ -97,7 +88,6 @@ $gray-light: #F2F2F2;
     border-bottom-color: $white !important;
     transition: all 0.2s ease;
 
-    // Underlines created with pseudo-elements
     &::before,
     &::after {
       background-color: $white !important;
@@ -113,7 +103,6 @@ $gray-light: #F2F2F2;
       border-bottom-color: $california-gold !important;
       background: rgba(255, 255, 255, 0.1) !important;
 
-      // Hover state for pseudo-element underlines
       &::before,
       &::after {
         background-color: $california-gold !important;
@@ -122,7 +111,6 @@ $gray-light: #F2F2F2;
     }
   }
 
-  // Keep site title strictly white on hover, click, and active states
   .site-title {
     &,
     &:hover,
@@ -135,18 +123,15 @@ $gray-light: #F2F2F2;
     }
   }
 
-  // Ensure dropdown menu background matches header theme
   .hidden-links {
     background-color: $berkeley-blue !important;
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
 
-// Mobile hamburger toggle button styling
 .greedy-nav__toggle {
   border-color: $white !important;
 
-  // Hamburger lines
   .navicon,
   .navicon::before,
   .navicon::after {
@@ -155,7 +140,6 @@ $gray-light: #F2F2F2;
     transition: all 0.2s ease;
   }
 
-  // Icon fallback
   i, svg {
     color: $white !important;
     fill: $white !important;
@@ -179,7 +163,6 @@ $gray-light: #F2F2F2;
   }
 }
 
-// Highlight and underline active page in California Gold
 .masthead .greedy-nav a[aria-current="page"] {
   color: $california-gold !important;
 
@@ -189,7 +172,7 @@ $gray-light: #F2F2F2;
   }
 }
 
-// Desktop-specific refinements for homepage hero
+// Layout & Base Overrides
 @media (min-width: 992px) {
   .hero-section .hero-content {
     gap: 2.5rem;
@@ -198,21 +181,17 @@ $gray-light: #F2F2F2;
     line-height: 1.2;
   }
 }
+
 .page__title {
   color: $berkeley-blue !important;
   border-bottom: 3px solid $california-gold !important;
 }
 
-// Allow hiding title on pages using `no-title` class (used by homepage)
 .no-title .page__title,
 .home .page__title {
   display: none;
 }
-.home .page__title {
-  display: none;
-}
 
-// Center the homepage and events page container and prevent any sidebar offset
 .home.layout--single .page,
 .home.layout--single .page__inner-wrap,
 .home.layout--single .page__content,
@@ -265,7 +244,7 @@ $gray-light: #F2F2F2;
   }
 }
 
-// Team page styling
+// Team Page
 .team-intro {
   text-align: center;
   margin-bottom: 2rem;
@@ -417,7 +396,7 @@ $gray-light: #F2F2F2;
   }
 }
 
-// About page styling
+// About Page
 .about-hero {
   background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 10%) 100%);
   color: white;
@@ -550,7 +529,6 @@ $gray-light: #F2F2F2;
   }
 }
 
-// Desktop-specific improvements for focus cards  
 @media (min-width: 768px) {
   .research-focus .focus-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -812,7 +790,7 @@ $gray-light: #F2F2F2;
   }
 }
 
-// Survey page styling
+// Survey Page
 .survey-section {
   margin-bottom: 3rem;
 }
@@ -1038,182 +1016,234 @@ $gray-light: #F2F2F2;
   }
 }
 
-// Home page styling
+// Homepage Components
 .hero-section {
   background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 15%) 100%);
   color: white;
-  padding: 3rem 0;
-  text-align: left;
-  margin-bottom: 3rem;
-  
+  padding: 3.5rem 0 0 0;
+  text-align: center;
+
   .hero-content {
+    max-width: 1200px;
+    margin: 0 auto 2.5rem auto;
+    padding: 0 1.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    text-align: center;
-  }
-  
-  .hero-logo {
-    flex-shrink: 0;
-    
-    .berkeley-logo {
-      width: 120px !important;
-      height: 120px !important;
-      aspect-ratio: 1 / 1;
+
+    .project-logo {
+      height: 75px;
+      width: auto;
+      max-width: 280px;
       object-fit: contain;
+      margin-bottom: 1.25rem;
       display: block;
-      border: 3px solid $california-gold;
-      border-radius: 50%;
-      background: white;
-      padding: 0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
   }
-  
+
   .hero-text {
-    text-align: center;
-    
     h1 {
       color: white;
       margin-bottom: 1rem;
-      font-size: 2.5em;
-      font-weight: 700;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-      line-height: 1.3;
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
     }
-    
+
     .hero-subtitle {
-      font-size: 1.3em;
-      opacity: 0.95;
+      font-size: 1.3rem;
+      opacity: 0.9;
       margin: 0;
       font-weight: 300;
     }
   }
+
+  .partner-subbar {
+    background-color: $gray-light;
+    border-top: 3px solid $california-gold;
+    padding: 1.5rem 1rem 1.75rem 1rem;
+    width: 100%;
+
+    .partner-label {
+      font-size: 0.78rem !important;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $berkeley-blue !important;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      opacity: 0.85;
+    }
+
+    .institution-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .institution-logo {
+        height: 44px;
+        width: auto;
+        max-width: 130px;
+        object-fit: contain;
+        opacity: 0.9;
+        transition: all 0.2s ease;
+        filter: grayscale(15%);
+
+        &:hover {
+          opacity: 1;
+          filter: grayscale(0%);
+          transform: translateY(-2px);
+        }
+
+        &[alt="Berkeley RDI"] {
+          height: 54px;
+        }
+      }
+    }
+  }
 }
 
-.intro-section {
-  margin-bottom: 4rem;
-  
-    .institution-logos {
-    display: flex;
-      justify-content: center;
-    align-items: center;
-      gap: 2.5rem;
-      margin-bottom: 3rem;
-    flex-wrap: wrap;
-    
-    .institution-logo {
-        height: 70px;
-      width: auto;
-        opacity: 0.9;
-      transition: all 0.3s ease;
-        filter: grayscale(20%);
-      border-radius: 8px;
+.mission-statement h2,
+.research-areas-section .section-header h2,
+.join-section h2 {
+  font-size: 2.25rem !important;
+  font-weight: 800 !important;
+  color: $berkeley-blue !important;
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+}
 
-      &:hover {
-        opacity: 1;
-        filter: grayscale(0%);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      }
+.latest-event-banner {
+  text-align: center;
+  margin: 2.5rem 0 2rem 0;
 
-      // Make Berkeley RDI logo larger for better readability
-      &[alt="Berkeley RDI"] {
-        height: 120px;
-      }
+  .latest-event-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, $california-gold 0%, darken($california-gold, 8%) 100%);
+    color: $berkeley-blue;
+    padding: 0.85rem 2.2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(253, 181, 21, 0.25);
+    transition: all 0.3s ease;
+    border: 2px solid darken($california-gold, 5%);
+
+    i {
+      margin-right: 0.5rem;
     }
-  }
 
-  .latest-event-banner {
-    text-align: center;
-    margin-top: 2.5rem;
-    margin-bottom: 0;
-
-    .latest-event-btn {
-      display: inline-block;
-      background: linear-gradient(135deg, $california-gold 0%, darken($california-gold, 8%) 100%);
-      color: $berkeley-blue;
-      padding: 1rem 2.5rem;
-      border-radius: 50px;
-      font-size: 1.2em;
-      font-weight: 600;
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(253, 181, 21, 0.35);
       text-decoration: none;
-      box-shadow: 0 4px 15px rgba(253, 181, 21, 0.3);
-      transition: all 0.3s ease;
-      border: 2px solid darken($california-gold, 5%);
-
-      i {
-        margin-right: 0.5rem;
-        color: $berkeley-blue;
-      }
-
-      &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 20px rgba(253, 181, 21, 0.4);
-        background: linear-gradient(135deg, lighten($california-gold, 5%) 0%, $california-gold 100%);
-        text-decoration: none;
-      }
-
-      &:active {
-        transform: translateY(-1px);
-      }
     }
   }
-  
-  .mission-statement {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    
-    h2 {
-      color: $berkeley-blue;
-      margin-bottom: 1.5rem;
-      font-size: 1.8em;
+}
+
+.mission-statement {
+  margin: 0 0 3.5rem 0;
+  text-align: left;
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 1.25rem;
+  }
+
+  .arrow-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $berkeley-blue;
+    text-decoration: none;
+
+    span {
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
-    
-    p {
-      font-size: 1.15em;
-      line-height: 1.7;
-      margin-bottom: 1.5rem;
-      color: $gray-medium;
-      font-weight: 400;
+
+    i {
+      font-size: 0.9rem;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover i {
+      transform: translateX(4px);
     }
   }
 }
 
 .research-areas-section {
-  margin-bottom: 4rem;
-  
+  margin-bottom: 3.5rem;
+
   .section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    
-    h2 {
-      color: $berkeley-blue;
-      margin-bottom: 0.5rem;
-      font-size: 1.8em;
-    }
-    
+    text-align: left;
+    margin-bottom: 2rem;
+
     p {
-      color: #666;
-      font-size: 1.1em;
+      color: #555;
+      font-size: 1.1rem;
+      margin: 0;
     }
   }
 }
 
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+.join-section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-bottom: 3.5rem;
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.75rem;
+  }
+
+  .arrow-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+
+    li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: $berkeley-blue;
+      text-decoration: none;
+
+      span {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      i {
+        font-size: 0.85rem;
+        transition: transform 0.2s ease;
+      }
+
+      &:hover i {
+        transform: translateX(4px);
+      }
+    }
+  }
 }
 
-// Desktop-specific improvements for research cards
 @media (min-width: 768px) {
   .research-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1323,7 +1353,7 @@ $gray-light: #F2F2F2;
   }
 }
 
-// SavvyCal scheduling integration styling
+// Integrations & Scheduling
 .scheduling-options {
   margin-top: 2rem;
   
@@ -1370,16 +1400,12 @@ $gray-light: #F2F2F2;
   }
 }
 
-// Responsive iframe for mobile
 @media (max-width: 768px) {
   .scheduling-embed iframe {
     height: 500px;
     min-height: 500px;
   }
-}
 
-// Mobile navigation enhancements
-@media (max-width: 768px) {
   .masthead {
     .site-title {
       font-size: 1.1em !important;
@@ -1440,7 +1466,7 @@ $gray-light: #F2F2F2;
   }
 }
 
-// Events page styling
+// Events Page
 .events-hero {
   background: linear-gradient(135deg, $berkeley-blue 0%, darken($berkeley-blue, 10%) 100%);
   color: white;
@@ -1849,8 +1875,7 @@ $gray-light: #F2F2F2;
   }
 }
 
-// 1) Full-bleed hero: the blue band spans the whole window width and sits
-//    directly under the header. The text inside stays aligned with the page.
+// Layout Adjustments & UI Custom Components
 .hero-section,
 .events-hero,
 .about-hero {
@@ -1859,18 +1884,15 @@ $gray-light: #F2F2F2;
   margin-left: calc(50% - 50vw);
 }
 
-// Remove the white gap between the header and the hero
 .home #main,
 .wide #main {
   margin-top: 0;
 }
 
-// 100vw includes the scrollbar on some systems: avoid a horizontal scrollbar
 body {
   overflow-x: hidden;
 }
 
-// 2) Make the logo readable on the blue header: white rounded background
 .masthead .site-logo img {
   height: 48px;
   padding: 4px;
@@ -1878,7 +1900,6 @@ body {
   border-radius: 8px;
 }
 
-// Yellow announcement strip above the header.
 .announcement-bar {
   background: $california-gold;
   font-size: 0.8rem;
@@ -1901,12 +1922,10 @@ body {
   }
 }
 
-// The logo now lives in the hero, so hide it in the menu bar
 .masthead .site-logo {
   display: none;
 }
 
-// Logo shown in the hero (added via CSS, so no HTML change is needed)
 .hero-section .hero-content::before {
   content: "";
   flex-shrink: 0;
@@ -1918,7 +1937,6 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-// Gray breadcrumb bar under the header
 .breadcrumb-bar {
   background: darken($gray-light, 6%);
   font-size: 0.8rem;
@@ -1948,7 +1966,6 @@ body {
   }
 }
 
-// Split card: image on the left, blue text panel on the right
 .split-card {
   display: flex;
   overflow: hidden;
@@ -1980,7 +1997,6 @@ body {
     align-items: center;
     padding: 3rem;
 
-    // Override the theme's default h2 look (border, top margin)
     h2 {
       margin: 0 0 1.5rem;
       padding: 0;
@@ -1998,7 +2014,6 @@ body {
   }
 }
 
-// Stack image and text on small screens
 @media (max-width: 768px) {
   .split-card {
     flex-direction: column;
@@ -2013,7 +2028,6 @@ body {
   }
 }
 
-// Light variant of .split-card: gray panel, dark text, solid blue button.
 .split-card--light {
   background: $gray-light;
 
@@ -2024,7 +2038,6 @@ body {
   }
 }
 
-// Feature cards: image on top, colored panel below with an outlined button.
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -2058,8 +2071,6 @@ body {
     flex: 1;
     padding: 2rem;
 
-    // Reset the theme's default heading/link colors so they inherit
-    // the panel's text color set below (white on blue, blue on gold)
     h3, h4, p, li, em, strong {
       color: inherit;
     }
@@ -2090,26 +2101,22 @@ body {
     }
   }
 
-  // Berkeley Blue panel, white text
   &--blue &__body {
     background: $berkeley-blue;
     color: $white;
   }
 
-  // California Gold panel, Berkeley Blue text (approved pairing)
   &--gold &__body {
     background: $california-gold;
     color: $berkeley-blue;
   }
 
-  // Blue Dark panel, white text
   &--darkblue &__body {
     background: $blue-dark;
     color: $white;
   }
 }
 
-// Outlined buttons used inside the cards
 .btn--outline-gold {
   background: transparent !important;
   border: 2px solid $california-gold !important;
@@ -2118,5 +2125,45 @@ body {
   &:hover {
     background: $california-gold !important;
     color: $berkeley-blue !important;
+  }
+}
+
+.arrow-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+
+  li {
+    margin-bottom: 0.8rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: inherit;
+      text-decoration: none;
+
+      &:visited,
+      &:hover,
+      &:active {
+        color: inherit;
+      }
+
+      i {
+        font-size: 0.95rem;
+        transition: transform 0.2s ease;
+      }
+
+      span {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      &:hover i {
+        transform: translateX(4px);
+      }
+    }
   }
 }
