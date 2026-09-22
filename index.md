@@ -1,7 +1,7 @@
 ﻿---
 title: "Production Agents Survey"
 layout: single
-classes: home wide no-title
+classes: wide no-title
 ---
 
 <div class="hero-section">

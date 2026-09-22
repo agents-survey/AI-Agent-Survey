@@ -1,5 +1,7 @@
 ---
 ---
+// Inspo: https://eecs.berkeley.edu/research/
+
 // Berkeley Fonts
 // https://brand.berkeley.edu/visual-identity/typography/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -202,7 +204,10 @@ $gray-light: #F2F2F2;
 }
 
 // Allow hiding title on pages using `no-title` class (used by homepage)
-.page.no-title .page__title,
+.no-title .page__title,
+.home .page__title {
+  display: none;
+}
 .home .page__title {
   display: none;
 }
@@ -246,6 +251,8 @@ $gray-light: #F2F2F2;
   }
   
   .page__footer-follow {
+    color: $white !important;
+    
     .social-icons {
       .fab {
         color: white;
@@ -1003,17 +1010,20 @@ $gray-light: #F2F2F2;
 }
 
 .footer-note {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-top: 4rem;
+  padding: 3rem 1rem;
+  background: $berkeley-blue;
+  border-left: none;
   text-align: center;
-  margin-top: 3rem;
-  padding: 2rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-  border-left: 4px solid $california-gold;
-  
+
   p {
-    margin: 0;
-    font-size: 1.1em;
-    color: $berkeley-blue;
+    max-width: 700px;
+    margin: 0 auto;
+    color: $white;
+    font-size: 0.8em;
   }
 }
 
@@ -1869,11 +1879,10 @@ body {
 }
 
 // Yellow announcement strip above the header.
-// The markup lives at the top of _includes/masthead.html.
-// Berkeley Blue on California Gold is an approved pairing on brand.berkeley.edu.
 .announcement-bar {
   background: $california-gold;
   font-size: 0.8rem;
+  color: $berkeley-blue;
 
   &__inner {
     max-width: 1280px;
@@ -1887,7 +1896,7 @@ body {
     text-decoration: underline;
 
     &:hover {
-      color: $blue-dark;
+      text-decoration: none;
     }
   }
 }
@@ -1968,7 +1977,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 3rem;
 
     // Override the theme's default h2 look (border, top margin)
@@ -2001,5 +2010,113 @@ body {
     &__body {
       padding: 2rem;
     }
+  }
+}
+
+// Light variant of .split-card: gray panel, dark text, solid blue button.
+.split-card--light {
+  background: $gray-light;
+
+  .split-card__body {
+    h2, p {
+      color: $blue-dark;
+    }
+  }
+}
+
+// Feature cards: image on top, colored panel below with an outlined button.
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: stretch;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+
+  &__image {
+    position: relative;
+    height: 220px;
+    flex-shrink: 0;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    flex: 1;
+    padding: 2rem;
+
+    // Reset the theme's default heading/link colors so they inherit
+    // the panel's text color set below (white on blue, blue on gold)
+    h3, h4, p, li, em, strong {
+      color: inherit;
+    }
+
+    h3 {
+      margin: 0 0 1rem;
+      padding: 0;
+      border: 0;
+      font-size: 1.5em;
+    }
+
+    h4 {
+      margin: 1.5rem 0 0.5rem;
+      font-size: 1.1em;
+    }
+
+    ul {
+      margin: 0 0 1rem 1.5rem;
+
+      li {
+        margin-bottom: 0.4rem;
+      }
+    }
+
+    > p:last-of-type,
+    .scheduling-options {
+      margin-top: 1.5rem;
+    }
+  }
+
+  // Berkeley Blue panel, white text
+  &--blue &__body {
+    background: $berkeley-blue;
+    color: $white;
+  }
+
+  // California Gold panel, Berkeley Blue text (approved pairing)
+  &--gold &__body {
+    background: $california-gold;
+    color: $berkeley-blue;
+  }
+
+  // Blue Dark panel, white text
+  &--darkblue &__body {
+    background: $blue-dark;
+    color: $white;
+  }
+}
+
+// Outlined buttons used inside the cards
+.btn--outline-gold {
+  background: transparent !important;
+  border: 2px solid $california-gold !important;
+  color: $white !important;
+
+  &:hover {
+    background: $california-gold !important;
+    color: $berkeley-blue !important;
   }
 }

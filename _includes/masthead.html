@@ -5,7 +5,7 @@
   The text and link come from _config.yml (announcement.text / announcement.url).
   Remove the "announcement:" key from _config.yml to hide the bar.
 {% endcomment %}
-{%- if site.announcement.text -%}
+{%- if site.announcement.link_text -%}
   {%- if site.announcement.url contains "://" -%}
     {%- assign announcement_url = site.announcement.url -%}
   {%- else -%}
@@ -13,7 +13,9 @@
   {%- endif -%}
   <div class="announcement-bar">
     <div class="announcement-bar__inner">
-      <a href="{{ announcement_url }}">{{ site.announcement.text }} <span aria-hidden="true">&rarr;</span></a>
+      {{ site.announcement.prefix }}
+      <a href="{{ announcement_url }}">{{ site.announcement.link_text }}</a>
+      <span aria-hidden="true">&rarr;</span>
     </div>
   </div>
 {%- endif -%}

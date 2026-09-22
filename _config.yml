@@ -10,7 +10,8 @@ markdown: kramdown
 logo: "/assets/images/logos/skylab/MAP_logo_trans.png"
 
 announcement:
-  text: "Take the Production Agents Survey"
+  prefix: "Take the"
+  link_text: "Production Agents Survey"
   url: "/participate/"
 
 # Remote theme setup (GitHub Pages compatible)
