@@ -51,3 +51,7 @@ social:
 # Analytics (add if needed)
 # google_site_verification: "your-verification-code"
 # google_analytics: "your-tracking-id"
+
+# No blog posts, so no Atom feed (hides the theme feed links)
+atom_feed:
+  hide: true

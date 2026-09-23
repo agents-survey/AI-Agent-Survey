@@ -16,7 +16,7 @@ permalink: /team/
   </div>
 </div>
 
-<div class="feature-grid">
+<div class="team-grid">
 
   <div class="institution-section">
     <h3><i class="fas fa-university"></i> UC Berkeley</h3>
@@ -109,7 +109,7 @@ permalink: /team/
 
 </div>
 
-<div class="content-panel">
+<div class="band band--light">
   <div class="section-header">
     <h2><i class="fas fa-handshake"></i> Join Our Research</h2>
     <p>We welcome collaboration and participation from the broader research community:</p>
@@ -146,8 +146,4 @@ permalink: /team/
       <i class="fas fa-info-circle"></i> Learn More About Our Research
     </a>
   </div>
-</div>
-
-<div class="footer-note">
-  <p><em>Questions or Comments? Contact us at <a href="mailto:ai-agent-survey@googlegroups.com">ai-agent-survey@googlegroups.com</a>.</em></p>
 </div>

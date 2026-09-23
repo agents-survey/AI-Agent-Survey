@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Participate in Our Research"
 layout: single
 classes: wide no-title
@@ -10,7 +10,7 @@ permalink: /participate/
 <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AI Research Partecipation" class="hero-image" loading="lazy">
 </div>
 <div class="split-card__body">
-<h2>About Our Research</h2>
+<h2>Participate in Our Research</h2>
 <p>We are actively seeking input from researchers, industry practitioners, and organizations working with agentic AI systems. Your participation helps us understand the real-world challenges and opportunities in this field.</p>
 <a href="#current-research-activities" class="btn btn--success">Join the Research</a>
 </div>
@@ -81,12 +81,9 @@ permalink: /participate/
 <div class="split-card__body">
 <h2>Share Your Work &amp; Experience</h2>
 <p>Share and promote your repositories, publications, blogs, and anonymously answer high-level questions from your experience with Agentic AI systems.</p>
+<p><em>Your participation is crucial to advancing the field of agentic AI. Together, we can build more useful and practical systems for real-world applications.</em></p>
 <a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--primary">
 <i class="fas fa-envelope"></i> Contact Us
 </a>
 </div>
-</div>
-
-<div class="footer-note">
-<p><em>Your participation is crucial to advancing the field of agentic AI. Together, we can build more useful and practical systems for real-world applications.</em></p>
 </div>

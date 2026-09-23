@@ -1,7 +1,7 @@
-﻿---
+---
 title: "Production Agents Survey"
 layout: single
-classes: wide no-title
+classes: wide no-title home-page
 ---
 
 <div class="hero-section">
@@ -9,6 +9,14 @@ classes: wide no-title
     <div class="hero-text">
       <h1>Production Agents Survey</h1>
       <p class="hero-subtitle">A collaborative research initiative across leading institutions</p>
+      <div class="actions">
+        <a href="https://arxiv.org/abs/2512.04123v1" class="btn btn--success" target="_blank" rel="noopener">
+          <i class="fas fa-file-alt"></i> Read the 1st Report
+        </a>
+        <a href="{{ '/participate/' | relative_url }}#current-survey" class="btn btn--outline-gold">
+          <i class="fas fa-clipboard-list"></i> Take the Survey
+        </a>
+      </div>
     </div>
   </div>
 
@@ -25,12 +33,6 @@ classes: wide no-title
   </div>
 </div>
 
-<div class="latest-event-banner">
-  <a href="{{ '/events/' | relative_url }}#latest-report" class="latest-event-btn">
-    <i class="fas fa-star"></i> Latest Event: 1st Report Publicly Available!
-  </a>
-</div>
-
 <div class="mission-statement">
   <div class="section-header">
     <h2>Our Mission</h2>
@@ -44,42 +46,90 @@ classes: wide no-title
   </a>
 </div>
 
-<div class="section-header">
-  <h2>Key Research Areas</h2>
-  <p>Our interdisciplinary approach focuses on critical challenges in agentic AI</p>
+<div class="band band--light">
+  <div class="section-header">
+    <h2>Key Research Areas</h2>
+    <p>Our interdisciplinary approach focuses on critical challenges in agentic AI</p>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card feature-card--white">
+      <div class="feature-card__image">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=520&fit=crop&q=70&auto=format" alt="Server racks with network cables" loading="lazy">
+      </div>
+      <div class="feature-card__body">
+        <p class="feature-card__label">Systems</p>
+        <h3>Industry-Grade Agentic AI Systems</h3>
+        <p>Understanding technical challenges for real-world deployment and scaling</p>
+      </div>
+    </div>
+
+    <div class="feature-card feature-card--white">
+      <div class="feature-card__image">
+        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=520&fit=crop&q=70&auto=format" alt="Golden Gate Bridge over the San Francisco Bay" loading="lazy">
+      </div>
+      <div class="feature-card__body">
+        <p class="feature-card__label">Partnerships</p>
+        <h3>Academic-Industry Bridge</h3>
+        <p>Connecting research innovation with practical applications and industry needs</p>
+      </div>
+    </div>
+
+    <div class="feature-card feature-card--white">
+      <div class="feature-card__image">
+        <img src="https://images.unsplash.com/photo-1758873269035-aae0e1fd3422?w=800&h=520&fit=crop&q=70&auto=format" alt="Team collaborating around a whiteboard" loading="lazy">
+      </div>
+      <div class="feature-card__body">
+        <p class="feature-card__label">Collaboration</p>
+        <h3>Cross-Institutional Collaboration</h3>
+        <p>Leveraging expertise across 5 major institutions for comprehensive solutions</p>
+      </div>
+    </div>
+
+    <div class="feature-card feature-card--white">
+      <div class="feature-card__image">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=520&fit=crop&q=70&auto=format" alt="Analytics dashboard on a laptop screen" loading="lazy">
+      </div>
+      <div class="feature-card__body">
+        <p class="feature-card__label">Impact</p>
+        <h3>Impact-Driven Research</h3>
+        <p>Focusing on solving the most impactful industry problems with measurable outcomes</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="feature-grid">
-  <div class="feature-card feature-card--blue">
-    <div class="feature-card__body">
-      <h3><i class="fas fa-industry"></i> Industry-Grade Agentic AI Systems</h3>
-      <p>Understanding technical challenges for real-world deployment and scaling</p>
+<div class="band">
+  <div class="section-header">
+    <h2>Latest Events</h2>
+    <p>Workshops, talks and publications from our research collaboration</p>
+  </div>
+
+  <div class="event-list">
+    <div class="event-item">
+      <p class="event-item__date">Thursday, December 4, 2025</p>
+      <h3><a href="{{ '/events/' | relative_url }}#latest-report">1st Report Publicly Available!</a></h3>
+      <p class="event-item__meta"><i class="fas fa-file-alt" aria-hidden="true"></i> MAP: Measuring Agents in Production</p>
+    </div>
+    <div class="event-item">
+      <p class="event-item__date">Monday, October 13, 2025</p>
+      <h3><a href="{{ '/events/' | relative_url }}#saa-2025">1st Workshop on Systems for Agentic AI (SAA '25)</a></h3>
+      <p class="event-item__meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Seoul, Korea</p>
+    </div>
+    <div class="event-item">
+      <p class="event-item__date">Tuesday, August 5, 2025</p>
+      <h3><a href="{{ '/events/' | relative_url }}#sf-meetup-5">AI Agent SF Meetup #5 - Agents in Production</a></h3>
+      <p class="event-item__meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> San Francisco, CA</p>
     </div>
   </div>
 
-  <div class="feature-card feature-card--gold">
-    <div class="feature-card__body">
-      <h3><i class="fas fa-bridge"></i> Academic-Industry Bridge</h3>
-      <p>Connecting research innovation with practical applications and industry needs</p>
-    </div>
-  </div>
-
-  <div class="feature-card feature-card--darkblue">
-    <div class="feature-card__body">
-      <h3><i class="fas fa-handshake"></i> Cross-Institutional Collaboration</h3>
-      <p>Leveraging expertise across 5 major institutions for comprehensive solutions</p>
-    </div>
-  </div>
-
-  <div class="feature-card feature-card--blue">
-    <div class="feature-card__body">
-      <h3><i class="fas fa-bullseye"></i> Impact-Driven Research</h3>
-      <p>Focusing on solving the most impactful industry problems with measurable outcomes</p>
-    </div>
-  </div>
+  <a href="{{ '/events/' | relative_url }}" class="arrow-link">
+    <span>More Events</span>
+    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+  </a>
 </div>
 
-<div class="content-panel">
+<div class="band band--blue">
   <div class="section-header">
     <h2>Join Our Research Initiative</h2>
     <p>Help us advance the field of agentic AI through collaboration and participation. Share your experience, participate in our survey, or connect with our research team.</p>

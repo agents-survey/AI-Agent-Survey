@@ -1,6 +1,11 @@
 ---
 ---
 
+// Site styles, built on the Minimal Mistakes theme.
+// Layout and components (photo hero, full-width alternating bands, photo cards
+// with uppercase labels, compact events list, multi-column footer) are inspired
+// by the UC Berkeley EECS website: https://eecs.berkeley.edu
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 // =============================================================================
@@ -106,12 +111,28 @@ body {
     float: none !important;
   }
 
+  // The theme reserves room for a right sidebar, which these pages don't have
+  .page {
+    width: 100%;
+    padding-inline-end: 0;
+  }
+
   .sidebar {
     display: none !important;
+  }
+
+  // Empty on these pages, but its top margin left a white strip above the footer
+  .page__meta {
+    display: none;
   }
 }
 
 .wide #main {
+  margin-top: 0;
+}
+
+// The home page hero sits right below the masthead
+.home-page .page__inner-wrap {
   margin-top: 0;
 }
 
@@ -278,39 +299,81 @@ body {
 // =============================================================================
 
 .page__footer {
+  margin-top: 0;
   background: $berkeley-blue !important;
   border-top: 3px solid $california-gold !important;
   color: $white;
 
-  .page__footer-copyright,
-  .page__footer-follow,
-  .page__footer-follow .social-icons .fab {
-    color: $white !important;
+  a,
+  a:visited {
+    color: $white;
+    text-decoration: none;
   }
 
-  .page__footer-follow .social-icons .fab:hover {
-    color: $california-gold !important;
+  a:hover {
+    color: $california-gold;
+    text-decoration: underline;
+  }
+
+  .page__footer-copyright {
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba($white, 0.2);
+    font-size: 0.7em;
+    color: $white;
   }
 }
 
-// Closing band shown at the bottom of the inner pages
-.footer-note {
-  @include full-bleed;
-  margin-top: 4rem;
-  padding: 3rem 1rem;
-  background: $berkeley-blue;
-  text-align: center;
+// Link columns, from _includes/footer.html
+.site-footer {
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr 1.2fr 1.4fr;
+  gap: 2.5rem;
+  padding: 1rem 0 2.5rem;
+  font-size: 0.8em;
 
   p {
-    max-width: 700px;
-    margin: 0 auto;
-    color: $white;
-    font-size: 0.8em;
+    margin: 0 0 1rem;
+    line-height: 1.6;
   }
 
-  a,
-  a:visited {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  &__heading {
+    margin: 0 0 1rem;
+    font-size: 0.85em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
     color: $california-gold;
+  }
+
+  i {
+    margin-right: 0.4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .site-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: $mobile) {
+  .site-footer {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -320,8 +383,14 @@ body {
 
 // Buttons ---------------------------------------------------------------------
 
-.btn i {
-  margin-right: 0.4rem;
+.btn {
+  font-size: 0.85em;
+  padding: 0.6em 1.3em;
+  border-radius: 6px;
+
+  i {
+    margin-right: 0.4rem;
+  }
 }
 
 .btn--primary {
@@ -452,6 +521,7 @@ body {
   }
 
   p {
+    max-width: 75ch; // keeps lines readable on wide screens
     margin: 0 0 1rem;
     font-size: 1.1em;
     line-height: 1.6;
@@ -491,8 +561,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 3rem;
+
+    > .btn,
+    > .actions {
+      align-self: center;
+    }
 
     h2 {
       margin: 0 0 1.5rem;
@@ -543,13 +618,14 @@ body {
   }
 }
 
-// Content panel: light box grouping a header, cards and actions ---------------
+// Bands: full-width sections with alternating backgrounds ---------------------
 
-.content-panel {
-  background: $gray-light;
-  border-radius: $card-radius;
-  padding: 2.5rem 2rem;
+.band {
+  @include full-bleed;
+  // Percentages refer to the content column, so the inner content keeps its width
+  padding: 4rem calc(50vw - 50%);
   margin-bottom: $section-space;
+  background: $white;
 
   .feature-grid {
     margin-bottom: 1.5rem;
@@ -558,13 +634,49 @@ body {
   > :last-child {
     margin-bottom: 0;
   }
+
+  &--light {
+    background: $gray-light;
+  }
+
+  &--blue {
+    background: $berkeley-blue;
+    color: $white;
+
+    .section-header h2,
+    .section-header p {
+      color: $white;
+    }
+
+    .arrow-link,
+    .arrow-links-list a {
+      &,
+      &:visited,
+      &:active {
+        color: $white;
+      }
+
+      &:hover {
+        color: $california-gold;
+      }
+    }
+  }
+}
+
+// Consecutive bands touch; the last one touches the footer
+.band + .band {
+  margin-top: -$section-space;
+}
+
+.page__content > .band:last-child {
+  margin-bottom: 0;
 }
 
 // Feature cards ---------------------------------------------------------------
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
   gap: 2rem;
   margin-bottom: $section-space;
 }
@@ -591,7 +703,13 @@ body {
 
   &__body {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
+
+    > .actions {
+      margin-top: auto;
+    }
 
     h3, h4, p, li, em, strong {
       color: inherit;
@@ -601,7 +719,7 @@ body {
       margin: 0 0 1rem;
       padding: 0;
       border: 0;
-      font-size: 1.5em;
+      font-size: 1.3em;
 
       i {
         margin-right: 0.4rem;
@@ -609,7 +727,7 @@ body {
     }
 
     h4 {
-      margin: 1.5rem 0 0.5rem;
+      margin: 0.5rem 0;
       font-size: 1.1em;
     }
 
@@ -639,6 +757,34 @@ body {
   &--gold &__body {
     background: $california-gold;
     color: $berkeley-blue;
+  }
+
+  // Photo card: image on top, white body
+  &--white {
+    @include white-card;
+  }
+
+  &--white &__body {
+    padding: 1.5rem;
+
+    h3 {
+      font-size: 1.1em;
+      color: $berkeley-blue;
+    }
+  }
+
+  &--white &__image {
+    height: 180px;
+  }
+
+  // Small uppercase category above the title
+  &__body &__label {
+    margin: 0 0 0.5rem;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: $blue-medium;
   }
 }
 
@@ -681,22 +827,28 @@ body {
   }
 }
 
-// Institution badges ----------------------------------------------------------
+// Institution names: uppercase labels, each with a gold dot, not chips,
+// so they don't look like buttons (a dot before every name, so none is left
+// dangling at the end of a line when the list wraps) -----------------------------
 
 .institution-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.4rem 1.4rem;
   margin: 0 0 1.5rem;
 
   .badge {
-    background: $white;
-    border: 1px solid $berkeley-blue;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: $berkeley-blue;
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9em;
-    font-weight: 500;
+
+    &::before {
+      content: "\2022";
+      margin-right: 0.5rem;
+      color: $california-gold;
+    }
   }
 }
 
@@ -706,10 +858,17 @@ body {
 
 .hero-section {
   @include full-bleed;
-  background: linear-gradient(135deg, $berkeley-blue 0%, $blue-dark 100%);
+  // UC Berkeley campus (Niramay Kachhadiya, Unsplash) under a blue overlay
+  background:
+    linear-gradient(135deg, rgba($berkeley-blue, 0.75) 0%, rgba($blue-dark, 0.85) 100%),
+    url("https://images.unsplash.com/photo-1664535206434-54df1452e43e?w=2400&q=70&auto=format&fit=crop") center 75% / cover;
   color: $white;
-  padding-top: 3.5rem;
+  padding-top: 4.5rem;
   text-align: center;
+
+  .actions {
+    margin-top: 2rem;
+  }
 
   .hero-content {
     max-width: 1200px;
@@ -783,6 +942,8 @@ body {
     object-fit: contain;
     opacity: 0.9;
     filter: grayscale(15%);
+    // Blends logos with a white background (Sky Lab, Berkeley RDI) into the gray bar
+    mix-blend-mode: multiply;
     transition: all 0.2s ease;
 
     &:hover {
@@ -819,44 +980,56 @@ body {
   }
 }
 
-.latest-event-banner {
-  text-align: center;
-  margin: 2.5rem 0;
-
-  .latest-event-btn {
-    display: inline-block;
-    background: $california-gold;
-    color: $berkeley-blue;
-    padding: 0.85rem 2.2rem;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-decoration: none;
-    box-shadow: 0 4px 15px rgba($california-gold, 0.25);
-    transition: all 0.3s ease;
-
-    i {
-      margin-right: 0.5rem;
-    }
-
-    &:hover {
-      background: $gold-medium;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba($california-gold, 0.35);
-      text-decoration: none;
-    }
-  }
-}
-
-@media (max-width: $mobile) {
-  .latest-event-banner .latest-event-btn {
-    font-size: 1em;
-    padding: 0.875rem 1.75rem;
-  }
-}
-
 .mission-statement {
   margin-bottom: $section-space;
+}
+
+// Compact list of the latest events
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-item {
+  padding-top: 1rem;
+  border-top: 3px solid $california-gold;
+
+  &__date {
+    margin: 0 0 0.5rem;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $blue-medium;
+  }
+
+  h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.15em;
+    line-height: 1.35;
+
+    a,
+    a:visited {
+      color: $berkeley-blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__meta {
+    margin: 0;
+    font-size: 0.9em;
+
+    i {
+      margin-right: 0.4rem;
+      color: $berkeley-blue;
+    }
+  }
 }
 
 // =============================================================================
@@ -873,6 +1046,8 @@ body {
 .event-card {
   @include white-card;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -926,15 +1101,18 @@ body {
     background: $california-gold;
     color: $berkeley-blue;
   }
-
-  &.upcoming-badge {
-    background: $berkeley-blue;
-    color: $white;
-  }
 }
 
+// Column layout so the buttons sit at the bottom of cards of different length
 .event-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 1.5rem;
+
+  > .actions {
+    margin-top: auto;
+  }
 
   h3 {
     color: $berkeley-blue;
@@ -1004,18 +1182,6 @@ body {
   }
 }
 
-.event-actions {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-
-  .btn {
-    flex: 1;
-    min-width: 120px;
-    margin: 0;
-  }
-}
-
 .past-event {
   @include white-card;
   padding: 1.5rem;
@@ -1040,22 +1206,26 @@ body {
 }
 
 @media (max-width: $mobile) {
-  .event-actions {
-    flex-direction: column;
-
-    .btn {
-      flex: none;
-    }
-  }
 }
 
 // =============================================================================
 // 10. Team page
 // =============================================================================
 
+// Columns instead of a grid, so short cards don't stretch to the tallest one
+.team-grid {
+  columns: 2 300px;
+  column-gap: 2rem;
+  margin-bottom: $section-space;
+}
+
 .institution-section {
   @include white-card;
   padding: 1.75rem;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2rem;
+  break-inside: avoid;
 
   h3 {
     margin: 0 0 1rem;

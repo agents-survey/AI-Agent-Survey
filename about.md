@@ -1,4 +1,4 @@
-﻿---
+---
 title: About Our Research
 layout: single
 classes: wide no-title
@@ -39,7 +39,7 @@ permalink: /about/
   </div>
 </div>
 
-<div class="content-panel" id="ways-to-participate">
+<div class="band band--light" id="ways-to-participate">
 <div class="section-header">
 <h2><i class="fas fa-handshake"></i> Ways to Participate</h2>
 <p>Join our collaborative research community</p>
@@ -99,8 +99,4 @@ permalink: /about/
 </a>
 </div>
 </div>
-</div>
-
-<div class="footer-note">
-<p><em>Questions or Comments? We welcome your input and collaboration. Get in touch with our research team at <a href="mailto:ai-agent-survey@googlegroups.com">ai-agent-survey@googlegroups.com</a>.</em></p>
 </div>

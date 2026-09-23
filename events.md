@@ -42,7 +42,7 @@ permalink: /events/
           <li> 🛑 What are the top challenge now? Reliability. </li>
         </ul>
       </div>
-      <div class="event-actions">
+      <div class="actions">
         <a href="https://arxiv.org/abs/2512.04123v1" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-external-link-alt"></i> Read the Full Report
         </a>
@@ -53,7 +53,7 @@ permalink: /events/
     </div>
   </div>
 
-  <div class="event-card featured">
+  <div class="event-card featured" id="saa-2025">
     <div class="event-header">
       <div class="event-date">
         <span class="month">Oct</span>
@@ -81,7 +81,7 @@ permalink: /events/
           <li>Hardware-Aware System Optimizations</li>
         </ul>
       </div>
-      <div class="event-actions">
+      <div class="actions">
         <a href="https://saa2025.github.io/" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-external-link-alt"></i> Workshop Website
         </a>
@@ -92,7 +92,7 @@ permalink: /events/
     </div>
   </div>
 
-  <div class="event-card featured">
+  <div class="event-card featured" id="sf-meetup-5">
     <div class="event-header">
       <div class="event-date">
         <span class="month">Aug</span>
@@ -122,7 +122,7 @@ permalink: /events/
           <li>Networking with 350+ AI agent developers and researchers</li>
         </ul>
       </div>
-      <div class="event-actions">
+      <div class="actions">
         <a href="https://lu.ma/x16vikh7" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-external-link-alt"></i> View Event Details
         </a>
@@ -133,13 +133,13 @@ permalink: /events/
     </div>
   </div>
 
-  <div class="event-card">
+  <div class="event-card featured">
     <div class="event-header">
       <div class="event-date">
         <span class="month">Aug</span>
         <span class="day">2</span>
       </div>
-      <div class="event-status upcoming-badge">
+      <div class="event-status featured-badge">
         <i class="fas fa-check-circle"></i> Completed
       </div>
     </div>
@@ -174,7 +174,7 @@ permalink: /events/
           <li>Vinod Khosla (Founding Partner, Khosla Ventures)</li>
         </ul>
       </div>
-      <div class="event-actions">
+      <div class="actions">
         <a href="https://rdi.berkeley.edu/events/agentic-ai-summit" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-external-link-alt"></i> View Summit Details
         </a>
@@ -231,7 +231,7 @@ permalink: /events/
   </div>
 </div>
 
-<div id="contact" class="content-panel">
+<div id="contact" class="band band--light">
   <div class="section-header">
     <h2><i class="fas fa-envelope"></i> Stay Connected</h2>
     <p>Don't miss out on our latest events and research updates. Join our community of researchers and industry professionals.</p>
@@ -258,8 +258,4 @@ permalink: /events/
       </div>
     </div>
   </div>
-</div>
-
-<div class="footer-note">
-  <p><em>Questions or Comments? We welcome your input and collaboration. Get in touch with our research team at <a href="mailto:ai-agent-survey@googlegroups.com">ai-agent-survey@googlegroups.com</a>.</em></p>
 </div>
