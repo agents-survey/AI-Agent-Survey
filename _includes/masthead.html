@@ -2,7 +2,7 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
 {% comment %}
-  The text and link come from _config.yml (announcement.text / announcement.url).
+  The text and link come from _config.yml (announcement.prefix / link_text / url).
   Remove the "announcement:" key from _config.yml to hide the bar.
 {% endcomment %}
 {%- if site.announcement.link_text -%}

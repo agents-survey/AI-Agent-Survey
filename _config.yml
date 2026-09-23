@@ -6,8 +6,18 @@ baseurl: "/AI-Agent-Survey"
 permalink: pretty
 markdown: kramdown
 
-# Site logo (appears in masthead)
+# Site logo. Hidden in the masthead by main.scss; the home page hero shows
+# the same image, set directly in main.scss (.hero-section)
 logo: "/assets/images/logos/skylab/MAP_logo_trans.png"
+
+# Repository files that are not part of the site. Setting this list replaces
+# Jekyll's defaults, so Gemfile and vendor/ (local gems) are listed again here
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
 
 announcement:
   prefix: "Take the"
