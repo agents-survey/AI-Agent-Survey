@@ -140,7 +140,7 @@ permalink: /events/
         <span class="day">2</span>
       </div>
       <div class="event-status upcoming-badge">
-        <i class="fas fa-check-circle"></i> COMPLETED
+        <i class="fas fa-check-circle"></i> Completed
       </div>
     </div>
     <div class="event-content">
@@ -186,12 +186,12 @@ permalink: /events/
   </div>
 </div>
 
-<div class="feature-grid" style="margin-bottom: 3.5rem;">
+<div class="feature-grid">
   <div class="feature-card feature-card--blue">
-    <div class="feature-card__body" style="text-align: center;">
+    <div class="feature-card__body">
       <h3><i class="fas fa-calendar-check"></i> Stay Updated</h3>
       <p>Subscribe to our mailing list to receive notifications about upcoming events, workshops, and research symposiums.</p>
-      <div style="margin-top: 1.5rem;">
+      <div class="actions">
         <a href="mailto:ai-agent-survey@googlegroups.com?subject=Subscribe to Updates" class="btn btn--success">
           <i class="fas fa-envelope-open"></i> Subscribe for Updates
         </a>
@@ -200,11 +200,11 @@ permalink: /events/
   </div>
 
   <div class="feature-card feature-card--darkblue">
-    <div class="feature-card__body" style="text-align: center;">
+    <div class="feature-card__body">
       <h3><i class="fas fa-chalkboard-teacher"></i> Speaking Opportunities</h3>
       <p>Interested in presenting your research or industry insights at our events? We welcome proposals from the community.</p>
-      <div style="margin-top: 1.5rem;">
-        <a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--primary" style="border: 2px solid #ffffff;">
+      <div class="actions">
+        <a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--outline-gold">
           <i class="fas fa-paper-plane"></i> Contact Organizers
         </a>
       </div>
@@ -212,47 +212,47 @@ permalink: /events/
   </div>
 </div>
 
-<div class="plain-header" style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
+<div class="section-header">
   <h2><i class="fas fa-history"></i> Past Events</h2>
   <p>Our previous workshops and conferences have brought together researchers from across the globe</p>
 </div>
 
-<div class="past-events-grid" style="margin-bottom: 3.5rem;">
-  <div class="past-event" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+<div class="feature-grid">
+  <div class="past-event">
     <h4>Research Collaboration Kickoff</h4>
     <p class="past-event-date">Fall 2024</p>
     <p>Initial meeting bringing together researchers from UC Berkeley, Stanford, IBM Research, UIUC, and Intesa Sanpaolo to establish collaboration frameworks.</p>
   </div>
-  
-  <div class="past-event" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+
+  <div class="past-event">
     <h4>Industry Requirements Workshop</h4>
     <p class="past-event-date">Fall 2024</p>
     <p>Deep-dive session with industry partners to identify key technical challenges and research priorities for production agentic AI systems.</p>
   </div>
 </div>
 
-<div id="contact" class="split-card split-card--light" style="display: block; padding: 2.5rem 2rem; margin: 2.5rem 0;">
-  <div class="split-card__body" style="display: block; padding: 0; text-align: center; margin-bottom: 2rem;">
+<div id="contact" class="content-panel">
+  <div class="section-header">
     <h2><i class="fas fa-envelope"></i> Stay Connected</h2>
     <p>Don't miss out on our latest events and research updates. Join our community of researchers and industry professionals.</p>
   </div>
-  
-  <div class="feature-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-    <div class="feature-card feature-card--blue" style="text-align: center; height: 100%;">
+
+  <div class="feature-grid">
+    <div class="feature-card feature-card--blue">
       <div class="feature-card__body">
         <h3><i class="fas fa-clipboard-list"></i> Research Participation</h3>
         <p>Participate in our ongoing research studies and surveys</p>
-        <div style="margin-top: 1.5rem;">
+        <div class="actions">
           <a href="{{ '/participate/' | relative_url }}" class="btn btn--success">Join Research</a>
         </div>
       </div>
     </div>
-    
-    <div class="feature-card feature-card--gold" style="text-align: center; height: 100%;">
+
+    <div class="feature-card feature-card--gold">
       <div class="feature-card__body">
         <h3><i class="fas fa-users"></i> Meet the Team</h3>
         <p>Connect with researchers from our partner institutions</p>
-        <div style="margin-top: 1.5rem;">
+        <div class="actions">
           <a href="{{ '/team/' | relative_url }}" class="btn btn--primary">View Team</a>
         </div>
       </div>

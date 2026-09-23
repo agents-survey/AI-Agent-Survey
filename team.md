@@ -16,9 +16,9 @@ permalink: /team/
   </div>
 </div>
 
-<div class="feature-grid" style="margin-bottom: 3rem;">
+<div class="feature-grid">
 
-  <div class="institution-section" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); background: #ffffff; padding: 1.75rem;">
+  <div class="institution-section">
     <h3><i class="fas fa-university"></i> UC Berkeley</h3>
 
     <div class="team-category">
@@ -53,7 +53,7 @@ permalink: /team/
     </div>
   </div>
 
-  <div class="institution-section" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); background: #ffffff; padding: 1.75rem;">
+  <div class="institution-section">
     <h3><i class="fas fa-rocket"></i> Stanford</h3>
 
     <div class="team-category">
@@ -65,7 +65,7 @@ permalink: /team/
     </div>
   </div>
 
-  <div class="institution-section" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); background: #ffffff; padding: 1.75rem;">
+  <div class="institution-section">
     <h3><i class="fas fa-microchip"></i> IBM Research</h3>
 
     <div class="team-category">
@@ -77,7 +77,7 @@ permalink: /team/
     </div>
   </div>
 
-  <div class="institution-section" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); background: #ffffff; padding: 1.75rem;">
+  <div class="institution-section">
     <h3><i class="fas fa-building"></i> Intesa Sanpaolo</h3>
 
     <div class="team-category">
@@ -89,7 +89,7 @@ permalink: /team/
     </div>
   </div>
 
-  <div class="institution-section" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); background: #ffffff; padding: 1.75rem;">
+  <div class="institution-section">
     <h3><i class="fas fa-graduation-cap"></i> UIUC</h3>
 
     <div class="team-category">
@@ -109,28 +109,28 @@ permalink: /team/
 
 </div>
 
-<div class="split-card split-card--light" style="display: block; padding: 2.5rem 2rem; margin: 2.5rem 0;">
-  <div class="split-card__body" style="display: block; padding: 0; text-align: center; margin-bottom: 2rem;">
+<div class="content-panel">
+  <div class="section-header">
     <h2><i class="fas fa-handshake"></i> Join Our Research</h2>
     <p>We welcome collaboration and participation from the broader research community:</p>
   </div>
 
-  <div class="feature-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-    <div class="feature-card feature-card--blue" style="height: 100%;">
+  <div class="feature-grid">
+    <div class="feature-card feature-card--blue">
       <div class="feature-card__body">
         <h3><i class="fas fa-share-alt"></i> Share Your Work</h3>
         <p>Share and promote your repositories, publications, blogs, etc.</p>
       </div>
     </div>
 
-    <div class="feature-card feature-card--darkblue" style="height: 100%;">
+    <div class="feature-card feature-card--darkblue">
       <div class="feature-card__body">
         <h3><i class="fas fa-comments"></i> Share Your Experience</h3>
         <p>Anonymously answer high-level questions from your experience with Agentic AI systems</p>
       </div>
     </div>
 
-    <div class="feature-card feature-card--gold" style="height: 100%;">
+    <div class="feature-card feature-card--gold">
       <div class="feature-card__body">
         <h3><i class="fas fa-users"></i> Deep Dive Discussion</h3>
         <p>Sign-up for an in-depth discussion of your use-cases and challenges you would like to solve</p>
@@ -138,7 +138,7 @@ permalink: /team/
     </div>
   </div>
 
-  <div style="text-align: center; margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+  <div class="actions">
     <a href="{{ '/participate/' | relative_url }}" class="btn btn--primary">
       <i class="fas fa-clipboard-list"></i> Participate in Research
     </a>

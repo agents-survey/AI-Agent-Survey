@@ -16,7 +16,9 @@ permalink: /participate/
 </div>
 </div>
 
-## Current Research Activities {#current-research-activities}
+<div class="section-header" id="current-research-activities">
+<h2>Current Research Activities</h2>
+</div>
 
 <div class="feature-grid">
 
@@ -37,11 +39,11 @@ permalink: /participate/
       </ul>
       <p><em>📅 Duration: about 10 minutes<br>🔒 Anonymous, no contact information required</em></p>
 
-      <div class="external-link">
-          <a href="https://berkeley.qualtrics.com/jfe/form/SV_3q1WIz3UAGgw0wC" class="btn btn--outline-gold" target="_blank" rel="noopener">
-            <i class="fas fa-external-link-alt"></i> Take the Survey
-          </a>
-        </div>
+      <div class="actions">
+        <a href="https://berkeley.qualtrics.com/jfe/form/SV_3q1WIz3UAGgw0wC" class="btn btn--outline-gold" target="_blank" rel="noopener">
+          <i class="fas fa-external-link-alt"></i> Take the Survey
+        </a>
+      </div>
     </div>
   </div>
 
@@ -62,14 +64,15 @@ permalink: /participate/
       </ul>
       <p><em>📅 Duration: 1 hour<br>💻 Format: Video call or phone<br>🔒 All responses confidential</em></p>
 
-        <div class="external-link">
-          <a href="https://savvycal.com/p/negara/ai-agent-survey" class="btn btn--outline-gold" target="_blank" rel="noopener">
-            <i class="fas fa-external-link-alt"></i> Let's find a time to meet!
-          </a>
-        </div>
+      <div class="actions">
+        <a href="https://savvycal.com/p/negara/ai-agent-survey" class="btn btn--outline-gold" target="_blank" rel="noopener">
+          <i class="fas fa-external-link-alt"></i> Let's find a time to meet!
+        </a>
       </div>
     </div>
   </div>
+
+</div>
 
 <div class="split-card split-card--light">
 <div class="split-card__image">

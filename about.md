@@ -15,7 +15,7 @@ permalink: /about/
 </div>
 </div>
 
-<div class="plain-header" style="text-align: left; margin-top: 3rem;">
+<div class="section-header">
 <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
 <p>In a collaboration of over 20 researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, the University of Illinois at Urbana-Champaign, and Stanford, our mission is to broadly understand the key technical challenges for industry-grade agentic AI systems and to build bridges between academic innovation with industry realities and the AI and Systems research communities.</p>
 <p>From this study, we hope to steer our own and the field's research toward solving the most impactful industry problems versus purely academic problems for building and running agentic AI systems, initially through papers and blogs synthesizing our findings.</p>
@@ -39,42 +39,42 @@ permalink: /about/
   </div>
 </div>
 
-<div class="split-card split-card--light" id="ways-to-participate" style="display: block; padding: 2.5rem 2rem; margin: 2.5rem 0;">
-<div class="split-card__body" style="display: block; padding: 0; text-align: left; align-items: stretch;">
+<div class="content-panel" id="ways-to-participate">
+<div class="section-header">
 <h2><i class="fas fa-handshake"></i> Ways to Participate</h2>
 <p>Join our collaborative research community</p>
 </div>
 
-<div class="feature-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-    <div class="feature-card feature-card--blue" style="height: 100%;">
+<div class="feature-grid">
+    <div class="feature-card feature-card--blue">
       <div class="feature-card__body">
         <h3><i class="fas fa-share-alt"></i> Share Your Work</h3>
         <p>Share and promote your repositories, publications, blogs, etc.</p>
       </div>
     </div>
 
-    <div class="feature-card feature-card--darkblue" style="height: 100%;">
+    <div class="feature-card feature-card--darkblue">
       <div class="feature-card__body">
         <h3><i class="fas fa-comments"></i> Share Your Experience</h3>
         <p>Anonymously answer high-level questions from your experience with Agentic AI systems</p>
       </div>
     </div>
 
-    <div class="feature-card feature-card--gold" style="height: 100%;">
+    <div class="feature-card feature-card--gold">
       <div class="feature-card__body">
         <h3><i class="fas fa-users"></i> Deep Dive Discussion</h3>
         <p>Sign-up for an in-depth discussion of your use-cases and challenges you would like to solve</p>
       </div>
     </div>
 </div>
-<div style="text-align: center; margin-top: 2rem;">
+<div class="actions">
 <a href="{{ '/participate/' | relative_url }}" class="btn btn--primary">
 <i class="fas fa-clipboard-list"></i> Participate in Research
 </a>
 </div>
 </div>
 
-<div class="split-card split-card--light" style="margin-top: 2rem;">
+<div class="split-card split-card--light">
 <div class="split-card__image">
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Research Team Collaboration" class="hero-image" loading="lazy">
 </div>
@@ -90,7 +90,7 @@ permalink: /about/
 <span class="badge">Intesa Sanpaolo</span>
 </div>
 
-<div class="external-link">
+<div class="actions">
 <a href="{{ '/team/' | relative_url }}" class="btn btn--primary">
 <i class="fas fa-users"></i> Meet Our Team
 </a>

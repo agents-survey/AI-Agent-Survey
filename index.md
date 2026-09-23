@@ -32,57 +32,58 @@ classes: wide no-title
 </div>
 
 <div class="mission-statement">
-  <h2>Our Mission</h2>
-  <p>In a collaboration of over 20+ researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, the University of Illinois at Urbana-Champaign, and Stanford, our mission is to broadly understand the key technical challenges for industry-grade agentic AI systems and to build bridges between academic innovation with industry realities and the AI and Systems research communities.</p>
+  <div class="section-header">
+    <h2>Our Mission</h2>
+    <p>In a collaboration of over 20+ researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, the University of Illinois at Urbana-Champaign, and Stanford, our mission is to broadly understand the key technical challenges for industry-grade agentic AI systems and to build bridges between academic innovation with industry realities and the AI and Systems research communities.</p>
+    <p>From this study, we hope to steer our own and the field's research toward solving the most impactful industry problems versus purely academic problems for building and running agentic AI systems, initially through papers and blogs synthesizing our findings.</p>
+  </div>
 
-  <p>From this study, we hope to steer our own and the field's research toward solving the most impactful industry problems versus purely academic problems for building and running agentic AI systems, initially through papers and blogs synthesizing our findings.</p>
-
-  <a href="https://berkeley.qualtrics.com/jfe/form/SV_a8GbSp0tAu1cVdc" class="arrow-link" target="_blank" rel="noopener">
+  <a href="https://berkeley.qualtrics.com/jfe/form/SV_3q1WIz3UAGgw0wC" class="arrow-link" target="_blank" rel="noopener">
     <span>Take AI Agent Survey</span>
     <i class="fas fa-arrow-right" aria-hidden="true"></i>
   </a>
 </div>
 
-<div class="research-areas-section">
-  <div class="section-header">
-    <h2>Key Research Areas</h2>
-    <p>Our interdisciplinary approach focuses on critical challenges in agentic AI</p>
+<div class="section-header">
+  <h2>Key Research Areas</h2>
+  <p>Our interdisciplinary approach focuses on critical challenges in agentic AI</p>
+</div>
+
+<div class="feature-grid">
+  <div class="feature-card feature-card--blue">
+    <div class="feature-card__body">
+      <h3><i class="fas fa-industry"></i> Industry-Grade Agentic AI Systems</h3>
+      <p>Understanding technical challenges for real-world deployment and scaling</p>
+    </div>
   </div>
 
-  <div class="feature-grid">
-    <div class="feature-card feature-card--blue">
-      <div class="feature-card__body">
-        <h3><i class="fas fa-industry"></i> Industry-Grade Agentic AI Systems</h3>
-        <p>Understanding technical challenges for real-world deployment and scaling</p>
-      </div>
+  <div class="feature-card feature-card--gold">
+    <div class="feature-card__body">
+      <h3><i class="fas fa-bridge"></i> Academic-Industry Bridge</h3>
+      <p>Connecting research innovation with practical applications and industry needs</p>
     </div>
+  </div>
 
-    <div class="feature-card feature-card--gold">
-      <div class="feature-card__body">
-        <h3><i class="fas fa-bridge"></i> Academic-Industry Bridge</h3>
-        <p>Connecting research innovation with practical applications and industry needs</p>
-      </div>
+  <div class="feature-card feature-card--darkblue">
+    <div class="feature-card__body">
+      <h3><i class="fas fa-handshake"></i> Cross-Institutional Collaboration</h3>
+      <p>Leveraging expertise across 5 major institutions for comprehensive solutions</p>
     </div>
+  </div>
 
-    <div class="feature-card feature-card--darkblue">
-      <div class="feature-card__body">
-        <h3><i class="fas fa-handshake"></i> Cross-Institutional Collaboration</h3>
-        <p>Leveraging expertise across 5 major institutions for comprehensive solutions</p>
-      </div>
-    </div>
-
-    <div class="feature-card feature-card--blue">
-      <div class="feature-card__body">
-        <h3><i class="fas fa-bullseye"></i> Impact-Driven Research</h3>
-        <p>Focusing on solving the most impactful industry problems with measurable outcomes</p>
-      </div>
+  <div class="feature-card feature-card--blue">
+    <div class="feature-card__body">
+      <h3><i class="fas fa-bullseye"></i> Impact-Driven Research</h3>
+      <p>Focusing on solving the most impactful industry problems with measurable outcomes</p>
     </div>
   </div>
 </div>
 
-<div class="join-section">
-  <h2>Join Our Research Initiative</h2>
-  <p>Help us advance the field of agentic AI through collaboration and participation. take your experience, participate in our survey, or connect with our research team.</p>
+<div class="content-panel">
+  <div class="section-header">
+    <h2>Join Our Research Initiative</h2>
+    <p>Help us advance the field of agentic AI through collaboration and participation. Share your experience, participate in our survey, or connect with our research team.</p>
+  </div>
 
   <ul class="arrow-links-list">
     <li>
