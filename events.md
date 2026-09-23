@@ -16,11 +16,72 @@ permalink: /events/
 </div>
 
 <div class="events-grid">
+  <div class="event-card featured" id="agentic-ai-summit-2026">
+    <div class="event-header">
+      <div class="event-date">
+        <span class="month">Aug</span>
+        <span class="day">1–2</span>
+        <span class="year">2026</span>
+      </div>
+      <div class="event-status featured-badge">
+        <i class="fas fa-check-circle"></i> Completed
+      </div>
+    </div>
+    <div class="event-content">
+      <h3>Agentic AI Summit 2026</h3>
+      <p class="event-location">
+        <i class="fas fa-map-marker-alt"></i> UC Berkeley Campus, Berkeley, CA
+      </p>
+      <p class="event-description">
+        Our team joined the Agentic AI Summit hosted by Berkeley RDI, with a dedicated session on how to get involved with the Sky Computing Lab and RDI. Thanks to everyone who stopped by, picked up a flyer, scanned the QR code and filled out our 2026 survey!
+      </p>
+      <div class="actions">
+        <a href="https://rdi.berkeley.edu/events/agentic-ai-summit-2026" class="btn btn--primary" target="_blank" rel="noopener">
+          <i class="fas fa-external-link-alt"></i> Summit Website
+        </a>
+        <a href="{{ '/participate/' | relative_url }}#current-survey" class="btn btn--success">
+          <i class="fas fa-clipboard-list"></i> Take the 2026 Survey
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="event-card featured" id="icml-2026">
+    <div class="event-header">
+      <div class="event-date">
+        <span class="month">Jul</span>
+        <span class="day">9</span>
+        <span class="year">2026</span>
+      </div>
+      <div class="event-status featured-badge">
+        <i class="fas fa-check-circle"></i> Completed
+      </div>
+    </div>
+    <div class="event-content">
+      <h3>ICML 2026 Oral: Measuring Agents in Production</h3>
+      <p class="event-location">
+        <i class="fas fa-map-marker-alt"></i> Seoul, Korea
+      </p>
+      <p class="event-description">
+        Our paper <em>Measuring Agents in Production</em> was selected for an oral presentation at the International Conference on Machine Learning (ICML 2026). The talk gives an overview of the trends and challenges we observed in production agent systems.
+      </p>
+      <div class="actions">
+        <a href="https://icml.cc/virtual/2026/oral/71172" class="btn btn--primary" target="_blank" rel="noopener">
+          <i class="fas fa-video"></i> Watch the Oral Talk
+        </a>
+        <a href="https://arxiv.org/abs/2512.04123" class="btn btn--success" target="_blank" rel="noopener">
+          <i class="fas fa-file-alt"></i> Read the Paper
+        </a>
+      </div>
+    </div>
+  </div>
+
   <div class="event-card featured" id="latest-report">
     <div class="event-header">
       <div class="event-date">
         <span class="month">Dec</span>
         <span class="day">4</span>
+        <span class="year">2025</span>
       </div>
       <div class="event-status featured-badge">
         <i class="fas fa-check-circle"></i> Completed
@@ -58,6 +119,7 @@ permalink: /events/
       <div class="event-date">
         <span class="month">Oct</span>
         <span class="day">13</span>
+        <span class="year">2025</span>
       </div>
       <div class="event-status featured-badge">
         <i class="fas fa-check-circle"></i> Completed
@@ -97,6 +159,7 @@ permalink: /events/
       <div class="event-date">
         <span class="month">Aug</span>
         <span class="day">5</span>
+        <span class="year">2025</span>
       </div>
       <div class="event-status featured-badge">
         <i class="fas fa-check-circle"></i> Completed
@@ -138,6 +201,7 @@ permalink: /events/
       <div class="event-date">
         <span class="month">Aug</span>
         <span class="day">2</span>
+        <span class="year">2025</span>
       </div>
       <div class="event-status featured-badge">
         <i class="fas fa-check-circle"></i> Completed
@@ -186,6 +250,25 @@ permalink: /events/
   </div>
 </div>
 
+<div class="section-header">
+  <h2><i class="fas fa-history"></i> Past Events</h2>
+  <p>Our previous workshops and conferences have brought together researchers from across the globe</p>
+</div>
+
+<div class="feature-grid">
+  <div class="past-event">
+    <h4>Research Collaboration Kickoff</h4>
+    <p class="past-event-date">Fall 2024</p>
+    <p>Initial meeting bringing together researchers from UC Berkeley, Stanford, IBM Research, UIUC, and Intesa Sanpaolo to establish collaboration frameworks.</p>
+  </div>
+
+  <div class="past-event">
+    <h4>Industry Requirements Workshop</h4>
+    <p class="past-event-date">Fall 2024</p>
+    <p>Deep-dive session with industry partners to identify key technical challenges and research priorities for production agentic AI systems.</p>
+  </div>
+</div>
+
 <div class="feature-grid">
   <div class="feature-card feature-card--blue">
     <div class="feature-card__body">
@@ -209,25 +292,6 @@ permalink: /events/
         </a>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="section-header">
-  <h2><i class="fas fa-history"></i> Past Events</h2>
-  <p>Our previous workshops and conferences have brought together researchers from across the globe</p>
-</div>
-
-<div class="feature-grid">
-  <div class="past-event">
-    <h4>Research Collaboration Kickoff</h4>
-    <p class="past-event-date">Fall 2024</p>
-    <p>Initial meeting bringing together researchers from UC Berkeley, Stanford, IBM Research, UIUC, and Intesa Sanpaolo to establish collaboration frameworks.</p>
-  </div>
-
-  <div class="past-event">
-    <h4>Industry Requirements Workshop</h4>
-    <p class="past-event-date">Fall 2024</p>
-    <p>Deep-dive session with industry partners to identify key technical challenges and research priorities for production agentic AI systems.</p>
   </div>
 </div>
 

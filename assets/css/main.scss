@@ -1113,6 +1113,12 @@ body {
     font-size: 1.8em;
     line-height: 1;
   }
+
+  .year {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.8em;
+  }
 }
 
 .event-status {
@@ -1138,8 +1144,15 @@ body {
   flex-direction: column;
   padding: 1.5rem;
 
+  // Buttons always stacked and equally wide, whatever the card width
   > .actions {
     margin-top: auto;
+    flex-direction: column;
+    align-items: center;
+
+    .btn {
+      width: min(100%, 18rem);
+    }
   }
 
   h3 {

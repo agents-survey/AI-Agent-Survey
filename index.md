@@ -10,8 +10,8 @@ classes: wide no-title home-page
       <h1>Production Agents Survey</h1>
       <p class="hero-subtitle">A collaborative research initiative across leading institutions</p>
       <div class="actions">
-        <a href="https://arxiv.org/abs/2512.04123v1" class="btn btn--success" target="_blank" rel="noopener">
-          <i class="fas fa-file-alt"></i> Read the 1st Report
+        <a href="https://icml.cc/virtual/2026/oral/71172" class="btn btn--success" target="_blank" rel="noopener">
+          <i class="fas fa-video"></i> Watch our ICML 2026 Oral
         </a>
         <a href="{{ '/participate/' | relative_url }}#current-survey" class="btn btn--outline-gold">
           <i class="fas fa-clipboard-list"></i> Take the Survey
@@ -36,7 +36,7 @@ classes: wide no-title home-page
 <div class="mission-statement">
   <div class="section-header">
     <h2>Our Mission</h2>
-    <p>In a collaboration of over 20+ researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, the University of Illinois at Urbana-Champaign, and Stanford, our mission is to broadly understand the key technical challenges for industry-grade agentic AI systems and to build bridges between academic innovation with industry realities and the AI and Systems research communities.</p>
+    <p>In a collaboration of 20+ researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, the University of Illinois at Urbana-Champaign, and Stanford, our mission is to broadly understand the key technical challenges for industry-grade agentic AI systems and to build bridges between academic innovation with industry realities and the AI and Systems research communities.</p>
     <p>From this study, we hope to steer our own and the field's research toward solving the most impactful industry problems versus purely academic problems for building and running agentic AI systems, initially through papers and blogs synthesizing our findings.</p>
   </div>
 
@@ -107,19 +107,19 @@ classes: wide no-title home-page
 
   <div class="event-list">
     <div class="event-item">
-      <p class="event-item__date">Thursday, December 4, 2025</p>
-      <h3><a href="{{ '/events/' | relative_url }}#latest-report">1st Report Publicly Available!</a></h3>
-      <p class="event-item__meta"><i class="fas fa-file-alt" aria-hidden="true"></i> MAP: Measuring Agents in Production</p>
+      <p class="event-item__date">August 1–2, 2026</p>
+      <h3><a href="{{ '/events/' | relative_url }}#agentic-ai-summit-2026">Agentic AI Summit 2026</a></h3>
+      <p class="event-item__meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> UC Berkeley, Berkeley, CA</p>
     </div>
     <div class="event-item">
-      <p class="event-item__date">Monday, October 13, 2025</p>
-      <h3><a href="{{ '/events/' | relative_url }}#saa-2025">1st Workshop on Systems for Agentic AI (SAA '25)</a></h3>
+      <p class="event-item__date">Thursday, July 9, 2026</p>
+      <h3><a href="{{ '/events/' | relative_url }}#icml-2026">ICML 2026 Oral: Measuring Agents in Production</a></h3>
       <p class="event-item__meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Seoul, Korea</p>
     </div>
     <div class="event-item">
-      <p class="event-item__date">Tuesday, August 5, 2025</p>
-      <h3><a href="{{ '/events/' | relative_url }}#sf-meetup-5">AI Agent SF Meetup #5 - Agents in Production</a></h3>
-      <p class="event-item__meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> San Francisco, CA</p>
+      <p class="event-item__date">Thursday, December 4, 2025</p>
+      <h3><a href="{{ '/events/' | relative_url }}#latest-report">1st Report Publicly Available!</a></h3>
+      <p class="event-item__meta"><i class="fas fa-file-alt" aria-hidden="true"></i> MAP: Measuring Agents in Production</p>
     </div>
   </div>
 

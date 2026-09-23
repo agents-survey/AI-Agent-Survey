@@ -17,7 +17,7 @@ permalink: /about/
 
 <div class="section-header">
 <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
-<p>In a collaboration of over 20 researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, the University of Illinois at Urbana-Champaign, and Stanford, our mission is to broadly understand the key technical challenges for industry-grade agentic AI systems and to build bridges between academic innovation with industry realities and the AI and Systems research communities.</p>
+<p>In a collaboration of 20+ researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, the University of Illinois at Urbana-Champaign, and Stanford, our mission is to broadly understand the key technical challenges for industry-grade agentic AI systems and to build bridges between academic innovation with industry realities and the AI and Systems research communities.</p>
 <p>From this study, we hope to steer our own and the field's research toward solving the most impactful industry problems versus purely academic problems for building and running agentic AI systems, initially through papers and blogs synthesizing our findings.</p>
 </div>
 
@@ -80,7 +80,7 @@ permalink: /about/
 </div>
 <div class="split-card__body">
 <h2>Our Research Team</h2>
-<p>20 researchers spanning 5 institutions and counting…</p>
+<p>20+ researchers spanning 5 institutions and counting…</p>
 
 <div class="institution-badges">
 <span class="badge">UC Berkeley</span>

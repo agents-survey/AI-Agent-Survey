@@ -83,8 +83,16 @@ permalink: /team/
     <div class="team-category">
       <h4>Visiting Scholars</h4>
       <ul class="team-list">
-        <li><a href="https://www.linkedin.com/in/riccardo-cogo-9039a6150/" target="_blank" rel="noopener">Riccardo Cogo</a> - Visiting Scholar, Intesa Sanpaolo</li>
-        <li><a href="https://www.linkedin.com/in/shuyiyang/" target="_blank" rel="noopener">Shuyi Yang</a> - Visiting Scholar, Intesa Sanpaolo</li>
+        <li><a href="https://www.linkedin.com/in/andrea-ermellino/" target="_blank" rel="noopener">Andrea Ermellino</a> - Visiting Scholar, Intesa Sanpaolo</li>
+        <li><a href="https://www.linkedin.com/in/stella-rubini-a65241213/" target="_blank" rel="noopener">Stella Rubini</a> - Visiting Scholar, Intesa Sanpaolo</li>
+      </ul>
+    </div>
+
+    <div class="team-category">
+      <h4>Researchers</h4>
+      <ul class="team-list">
+        <li><a href="https://www.linkedin.com/in/riccardo-cogo-9039a6150/" target="_blank" rel="noopener">Riccardo Cogo</a> - Intesa Sanpaolo, former Visiting Scholar at UC Berkeley</li>
+        <li><a href="https://www.linkedin.com/in/shuyiyang/" target="_blank" rel="noopener">Shuyi Yang</a> - Intesa Sanpaolo, former Visiting Scholar at UC Berkeley</li>
       </ul>
     </div>
   </div>

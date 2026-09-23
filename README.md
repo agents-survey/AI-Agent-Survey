@@ -1,6 +1,6 @@
 # Toward Useful Systems for Useful Agentic AI
 
-A collaborative research initiative website featuring over 20 researchers across UC Berkeley, Stanford, IBM Research, UIUC, and Intesa Sanpaolo.
+A collaborative research initiative website featuring 20+ researchers across UC Berkeley, Stanford, IBM Research, UIUC, and Intesa Sanpaolo.
 
 ## 🌐 Live Site
 Visit: https://agents-survey.github.io/AI-Agent-Survey/
