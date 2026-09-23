@@ -187,6 +187,16 @@ body {
     color: $white !important;
     transition: all 0.2s ease;
 
+    &:hover,
+    &:focus,
+    &:active {
+      color: $california-gold !important;
+      background: rgba($white, 0.1) !important;
+    }
+  }
+
+  // Link underlines only: on the menu toggle, ::before is the page overlay
+  a {
     &::before,
     &::after {
       background-color: $white !important;
@@ -196,9 +206,6 @@ body {
     &:hover,
     &:focus,
     &:active {
-      color: $california-gold !important;
-      background: rgba($white, 0.1) !important;
-
       &::before,
       &::after {
         background-color: $california-gold !important;
@@ -221,6 +228,12 @@ body {
   .hidden-links {
     background-color: $berkeley-blue !important;
     border: 1px solid rgba($white, 0.2);
+
+    // Arrow pointing at the toggle, same color as the dropdown
+    &::before,
+    &::after {
+      border-color: $berkeley-blue transparent !important;
+    }
   }
 }
 
@@ -242,6 +255,21 @@ body {
     .navicon::after {
       background: $california-gold !important;
     }
+  }
+
+  // Open menu: the icon becomes an X, so the middle bar stays hidden
+  &.close .navicon,
+  &.close:hover .navicon {
+    background: transparent !important;
+  }
+
+  // Open menu: dim the page with a blue veil instead of the theme's white one
+  &::before {
+    background-color: $blue-dark !important;
+  }
+
+  &.close::before {
+    opacity: 0.6;
   }
 }
 
