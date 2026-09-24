@@ -1,0 +1,39 @@
+{% comment %}
+  Overrides the theme footer: link columns plus the copyright line.
+  Navigation links come from _data/navigation.yml.
+{% endcomment %}
+<div class="site-footer">
+  <div class="site-footer__col site-footer__col--about">
+    <p class="site-footer__title">{{ site.title }}</p>
+    <p>{{ site.description }}</p>
+  </div>
+
+  <div class="site-footer__col">
+    <h2 class="site-footer__heading">Explore</h2>
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      {%- for link in site.data.navigation.main %}
+      <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+
+  <div class="site-footer__col">
+    <h2 class="site-footer__heading">Partner Institutions</h2>
+    <ul>
+      <li><a href="https://www.berkeley.edu" target="_blank" rel="noopener">UC Berkeley</a></li>
+      <li><a href="https://www.stanford.edu" target="_blank" rel="noopener">Stanford University</a></li>
+      <li><a href="https://illinois.edu" target="_blank" rel="noopener">University of Illinois Urbana-Champaign</a></li>
+      <li><a href="https://research.ibm.com" target="_blank" rel="noopener">IBM Research</a></li>
+      <li><a href="https://group.intesasanpaolo.com" target="_blank" rel="noopener">Intesa Sanpaolo</a></li>
+    </ul>
+  </div>
+
+  <div class="site-footer__col">
+    <h2 class="site-footer__heading">Contact</h2>
+    <p>Questions or comments? We welcome your input and collaboration.</p>
+    <p><a href="mailto:ai-agent-survey@googlegroups.com"><i class="fas fa-envelope" aria-hidden="true"></i> ai-agent-survey@googlegroups.com</a></p>
+  </div>
+</div>
+
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>

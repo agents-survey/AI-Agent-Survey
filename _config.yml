@@ -1,13 +1,28 @@
 ﻿title: "Toward Useful Systems for Useful Agentic AI"
 name: "Agentic AI Research Collaboration"
-description: "A collaboration of over 20 researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, UIUC, and Stanford working on industry-grade agentic AI systems."
+description: "A collaboration of 20+ researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, UIUC, and Stanford working on industry-grade agentic AI systems."
 url: "https://agents-survey.github.io"
 baseurl: "/AI-Agent-Survey"
 permalink: pretty
 markdown: kramdown
 
-# Site logo (appears in masthead)
+# Site logo. Hidden in the masthead by main.scss; the home page hero shows
+# the same image, set directly in main.scss (.hero-section)
 logo: "/assets/images/logos/skylab/MAP_logo_trans.png"
+
+# Repository files that are not part of the site. Setting this list replaces
+# Jekyll's defaults, so Gemfile and vendor/ (local gems) are listed again here
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+announcement:
+  prefix: "Take the"
+  link_text: "Production Agents Survey"
+  url: "/participate/"
 
 # Remote theme setup (GitHub Pages compatible)
 remote_theme: mmistakes/minimal-mistakes@4.27.3
@@ -46,3 +61,7 @@ social:
 # Analytics (add if needed)
 # google_site_verification: "your-verification-code"
 # google_analytics: "your-tracking-id"
+
+# No blog posts, so no Atom feed (hides the theme feed links)
+atom_feed:
+  hide: true
