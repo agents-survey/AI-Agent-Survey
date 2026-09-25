@@ -1,4 +1,4 @@
-﻿title: "Toward Useful Systems for Useful Agentic AI"
+title: "Toward Useful Systems for Useful Agentic AI"
 name: "Agentic AI Research Collaboration"
 description: "A collaboration of 20+ researchers across UC Berkeley, Intesa Sanpaolo, IBM Research, UIUC, and Stanford working on industry-grade agentic AI systems."
 url: "https://agents-survey.github.io"
@@ -22,7 +22,7 @@ exclude:
 announcement:
   prefix: "Take the"
   link_text: "Production Agents Survey"
-  url: "/participate/"
+  url: "https://berkeley.qualtrics.com/jfe/form/SV_3q1WIz3UAGgw0wC"
 
 # Remote theme setup (GitHub Pages compatible)
 remote_theme: mmistakes/minimal-mistakes@4.27.3
