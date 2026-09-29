@@ -3,6 +3,8 @@
 
 # gems
 Gemfile.lock
+vendor/
+.bundle/
 
 # Jekyll
 _site/
