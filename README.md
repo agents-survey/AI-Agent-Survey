@@ -13,7 +13,7 @@ Visit: https://agents-survey.github.io/AI-Agent-Survey/
 - **Responsive Design**: Professional layout optimized for all devices
 
 ## 🚀 Local Development
-If you have Ruby and Bundler installed:
+Requires Ruby 3.x and Bundler. Ruby 3.3 is recommended, to match the version GitHub Pages uses to build the site (see [pages.github.com/versions](https://pages.github.com/versions/)).
 
 ```bash
 bundle install
