@@ -26,7 +26,7 @@ Then open [http://localhost:4000/AI-Agent-Survey/](http://localhost:4000/AI-Agen
 - `index.md` - Homepage: photo hero, partner logos, mission, research areas, latest events and a call to action
 - `about.md` - About the research collaboration
 - `team.md` - Team directory by institution
-- `events.md` - Events, workshops, and speaking opportunities
+- `events.md` - Events and workshops: recent events as cards, earlier events as expandable rows
 - `participate.md` - Research participation: survey, expert interviews, sharing work
 - `_config.yml` - Site configuration and metadata, including the announcement bar text
 - `_data/navigation.yml` - Menu entries (also used by the "Explore" column of the footer)

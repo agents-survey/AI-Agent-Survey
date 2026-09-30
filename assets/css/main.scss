@@ -1076,12 +1076,6 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: $card-shadow-hover;
-  }
 
   &.featured {
     border: 2px solid $california-gold;
@@ -1196,53 +1190,91 @@ body {
   }
 }
 
-.event-features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+// Earlier events: one row per event, expanded on click to show the full details
+.past-events {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-  margin-bottom: 1.5rem;
-
-  .feature {
-    text-align: center;
-    padding: 0.75rem;
-    background: $gray-light;
-    border-radius: 8px;
-
-    i {
-      display: block;
-      font-size: 1.5em;
-      color: $berkeley-blue;
-      margin-bottom: 0.5rem;
-    }
-
-    span {
-      font-size: 0.9em;
-      font-weight: 600;
-      color: $berkeley-blue;
-    }
-  }
+  margin-bottom: $section-space;
 }
 
 .past-event {
   @include white-card;
-  padding: 1.5rem;
+  overflow: hidden;
   border-left: 4px solid $california-gold;
 
-  h4 {
-    color: $berkeley-blue;
-    margin: 0 0 0.5rem;
+  summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 1.5rem;
+    padding: 1.25rem 3.5rem 1.25rem 1.5rem;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+
+    // Hide the default disclosure triangle (Safari)
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    // Chevron on the right, pointing down when closed and up when open
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 1.5rem;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-right: 2px solid $berkeley-blue;
+      border-bottom: 2px solid $berkeley-blue;
+      transform: translateY(-75%) rotate(45deg);
+      transition: transform 0.2s ease;
+    }
+
+    &:hover .past-event__title {
+      text-decoration: underline;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $blue-medium;
+      outline-offset: -2px;
+    }
   }
 
-  p {
-    line-height: 1.5;
-    margin: 0;
+  &[open] summary {
+    background: $gray-light;
+
+    &::after {
+      transform: translateY(-25%) rotate(225deg);
+    }
   }
 
-  .past-event-date {
+  &__date {
+    flex: 0 0 7.5rem;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: $blue-medium;
-    font-weight: 600;
-    font-size: 0.9em;
-    margin-bottom: 0.75rem;
+  }
+
+  &__title {
+    flex: 1 1 20rem;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: $berkeley-blue;
+  }
+
+  // Buttons in a row, left-aligned, instead of stacked like in the event cards
+  .event-content > .actions {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0;
+
+    .btn {
+      width: auto;
+    }
   }
 }
 
