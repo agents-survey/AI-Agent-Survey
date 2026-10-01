@@ -75,58 +75,50 @@ permalink: /events/
       </div>
     </div>
   </div>
+</div>
 
-  <div class="event-card featured" id="latest-report">
-    <div class="event-header">
-      <div class="event-date">
-        <span class="month">Dec</span>
-        <span class="day">4</span>
-        <span class="year">2025</span>
-      </div>
-      <div class="event-status featured-badge">
-        <i class="fas fa-check-circle"></i> Completed
-      </div>
-    </div>
+<div class="section-header">
+  <h2><i class="fas fa-history"></i> Earlier Events</h2>
+  <p>Previous workshops, talks and publications from our collaboration</p>
+</div>
+
+<div class="past-events">
+  <details class="past-event" id="latest-report">
+    <summary>
+      <span class="past-event__date">Dec 4, 2025</span>
+      <span class="past-event__title">1st Report Publicly Available!</span>
+    </summary>
     <div class="event-content">
-      <h3>1st Report Publicly Available!</h3>
       <p class="event-description">
-        Thrilled to release our latest report MAP: Measuring Agents in Production ⚙️🚀
+        Thrilled to release our first report MAP: Measuring Agents in Production.
         <br/>2025 is the year of agents… <em>but do they actually work in the real world, or is it just hype?</em>
-        <br/><br/> A group of 25 researchers across <b>Berkeley, Stanford, UIUC, IBM</b>, and <b>Intesa Sanpaolo</b> investigated what makes agents deployable in the wild. We surveyed <b>306 agent builders</b> and ran <b>20 in-depth interview case studies</b> across <b>26 agent application domains</b> to understand the current landscape of production agents. 
+      </p>
+      <p class="event-description">
+        A group of 25 researchers across <b>Berkeley, Stanford, UIUC, IBM</b>, and <b>Intesa Sanpaolo</b> investigated what makes agents deployable in the wild. We surveyed <b>306 agent builders</b> and ran <b>20 in-depth interview case studies</b> across <b>26 agent application domains</b> to understand the current landscape of production agents.
       </p>
       <div class="event-highlights">
         <h4>Findings Highlights:</h4>
         <ul>
-          <li> 📈 Why agents? Productivity gains. </li>
-          <li> ➕ How are production agents built? Simple &amp; controllable methods. </li>
-          <li> 🧑‍💻 How are production agents evaluated? Heavy human oversight. </li>
-          <li> 🛑 What are the top challenge now? Reliability. </li>
+          <li>Why agents? Productivity gains.</li>
+          <li>How are production agents built? Simple &amp; controllable methods.</li>
+          <li>How are production agents evaluated? Heavy human oversight.</li>
+          <li>What are the top challenges now? Reliability.</li>
         </ul>
       </div>
       <div class="actions">
-        <a href="https://arxiv.org/abs/2512.04123v1" class="btn btn--primary" target="_blank" rel="noopener">
-          <i class="fas fa-external-link-alt"></i> Read the Full Report
-        </a>
-        <a href="https://saa25.hotcrp.com" class="btn btn--success" target="_blank" rel="noopener">
-          <i class="fas fa-paper-plane"></i> Submit Abstract
+        <a href="https://arxiv.org/abs/2512.04123" class="btn btn--primary" target="_blank" rel="noopener">
+          <i class="fas fa-file-alt"></i> Read the Full Report
         </a>
       </div>
     </div>
-  </div>
+  </details>
 
-  <div class="event-card featured" id="saa-2025">
-    <div class="event-header">
-      <div class="event-date">
-        <span class="month">Oct</span>
-        <span class="day">13</span>
-        <span class="year">2025</span>
-      </div>
-      <div class="event-status featured-badge">
-        <i class="fas fa-check-circle"></i> Completed
-      </div>
-    </div>
+  <details class="past-event" id="saa-2025">
+    <summary>
+      <span class="past-event__date">Oct 13, 2025</span>
+      <span class="past-event__title">1st Workshop on Systems for Agentic AI (SAA '25)</span>
+    </summary>
     <div class="event-content">
-      <h3>1st Workshop on Systems for Agentic AI (SAA '25)</h3>
       <p class="event-location">
         <i class="fas fa-map-marker-alt"></i> Seoul, Korea
       </p>
@@ -147,29 +139,16 @@ permalink: /events/
         <a href="https://saa2025.github.io/" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-external-link-alt"></i> Workshop Website
         </a>
-        <a href="https://saa25.hotcrp.com" class="btn btn--success" target="_blank" rel="noopener">
-          <i class="fas fa-paper-plane"></i> Submit Abstract
-        </a>
       </div>
     </div>
-  </div>
+  </details>
 
-  <div class="event-card featured" id="sf-meetup-5">
-    <div class="event-header">
-      <div class="event-date">
-        <span class="month">Aug</span>
-        <span class="day">5</span>
-        <span class="year">2025</span>
-      </div>
-      <div class="event-status featured-badge">
-        <i class="fas fa-check-circle"></i> Completed
-      </div>
-    </div>
+  <details class="past-event" id="sf-meetup-5">
+    <summary>
+      <span class="past-event__date">Aug 5, 2025</span>
+      <span class="past-event__title">AI Agent SF Meetup #5: Agents in Production</span>
+    </summary>
     <div class="event-content">
-      <h3>AI Agent SF Meetup #5 - Agents in Production</h3>
-      <p class="event-date-text">
-        <i class="fas fa-calendar"></i> Tuesday, August 5, 2025
-      </p>
       <p class="event-location">
         <i class="fas fa-map-marker-alt"></i> San Francisco, CA
       </p>
@@ -187,48 +166,24 @@ permalink: /events/
       </div>
       <div class="actions">
         <a href="https://lu.ma/x16vikh7" class="btn btn--primary" target="_blank" rel="noopener">
-          <i class="fas fa-external-link-alt"></i> View Event Details
-        </a>
-        <a href="{{ '/participate/' | relative_url }}" class="btn btn--success">
-          <i class="fas fa-clipboard-list"></i> Join Our Research
+          <i class="fas fa-external-link-alt"></i> Meetup Page
         </a>
       </div>
     </div>
-  </div>
+  </details>
 
-  <div class="event-card featured">
-    <div class="event-header">
-      <div class="event-date">
-        <span class="month">Aug</span>
-        <span class="day">2</span>
-        <span class="year">2025</span>
-      </div>
-      <div class="event-status featured-badge">
-        <i class="fas fa-check-circle"></i> Completed
-      </div>
-    </div>
+  <details class="past-event" id="agentic-ai-summit-2025">
+    <summary>
+      <span class="past-event__date">Aug 2, 2025</span>
+      <span class="past-event__title">Agentic AI Summit 2025</span>
+    </summary>
     <div class="event-content">
-      <h3>Agentic AI Summit 2025</h3>
       <p class="event-location">
         <i class="fas fa-map-marker-alt"></i> UC Berkeley Campus, Berkeley, CA
       </p>
       <p class="event-description">
-        Building on the momentum of Berkeley RDI's popular LLM Agents MOOC series with over 23,000 registered learners, this landmark summit brought together visionary leaders from academia, pioneering entrepreneurs, experts from leading AI organizations, venture capitalists, and policymakers.
+        Building on the momentum of Berkeley RDI's popular LLM Agents MOOC series with over 23,000 registered learners, this landmark summit brought together visionary leaders from academia, pioneering entrepreneurs, experts from leading AI organizations, venture capitalists, and policymakers. The summit drew 1,500+ attendees and was live streamed.
       </p>
-      <div class="event-features">
-        <div class="feature">
-          <i class="fas fa-users"></i>
-          <span>1,500+ Attendees</span>
-        </div>
-        <div class="feature">
-          <i class="fas fa-video"></i>
-          <span>Live Stream</span>
-        </div>
-        <div class="feature">
-          <i class="fas fa-microphone"></i>
-          <span>Industry Leaders</span>
-        </div>
-      </div>
       <div class="event-highlights">
         <h4>Featured Speakers Include:</h4>
         <ul>
@@ -240,65 +195,17 @@ permalink: /events/
       </div>
       <div class="actions">
         <a href="https://rdi.berkeley.edu/events/agentic-ai-summit" class="btn btn--primary" target="_blank" rel="noopener">
-          <i class="fas fa-external-link-alt"></i> View Summit Details
-        </a>
-        <a href="https://rdi.berkeley.edu/events/agentic-ai-summit" class="btn btn--success" target="_blank" rel="noopener">
-          <i class="fas fa-play"></i> Watch Recordings
+          <i class="fas fa-external-link-alt"></i> Summit Website
         </a>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="section-header">
-  <h2><i class="fas fa-history"></i> Past Events</h2>
-  <p>Our previous workshops and conferences have brought together researchers from across the globe</p>
-</div>
-
-<div class="feature-grid">
-  <div class="past-event">
-    <h4>Research Collaboration Kickoff</h4>
-    <p class="past-event-date">Fall 2024</p>
-    <p>Initial meeting bringing together researchers from UC Berkeley, Stanford, IBM Research, UIUC, and Intesa Sanpaolo to establish collaboration frameworks.</p>
-  </div>
-
-  <div class="past-event">
-    <h4>Industry Requirements Workshop</h4>
-    <p class="past-event-date">Fall 2024</p>
-    <p>Deep-dive session with industry partners to identify key technical challenges and research priorities for production agentic AI systems.</p>
-  </div>
-</div>
-
-<div class="feature-grid">
-  <div class="feature-card feature-card--blue">
-    <div class="feature-card__body">
-      <h3><i class="fas fa-calendar-check"></i> Stay Updated</h3>
-      <p>Subscribe to our mailing list to receive notifications about upcoming events, workshops, and research symposiums.</p>
-      <div class="actions">
-        <a href="mailto:ai-agent-survey@googlegroups.com?subject=Subscribe to Updates" class="btn btn--success">
-          <i class="fas fa-envelope-open"></i> Subscribe for Updates
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="feature-card feature-card--darkblue">
-    <div class="feature-card__body">
-      <h3><i class="fas fa-chalkboard-teacher"></i> Speaking Opportunities</h3>
-      <p>Interested in presenting your research or industry insights at our events? We welcome proposals from the community.</p>
-      <div class="actions">
-        <a href="mailto:ai-agent-survey@googlegroups.com" class="btn btn--outline-gold">
-          <i class="fas fa-paper-plane"></i> Contact Organizers
-        </a>
-      </div>
-    </div>
-  </div>
+  </details>
 </div>
 
 <div id="contact" class="band band--light">
   <div class="section-header">
-    <h2><i class="fas fa-envelope"></i> Stay Connected</h2>
-    <p>Don't miss out on our latest events and research updates. Join our community of researchers and industry professionals.</p>
+    <h2><i class="fas fa-handshake"></i> Stay Connected</h2>
+    <p>Take part in our research or get to know the people behind it.</p>
   </div>
 
   <div class="feature-grid">

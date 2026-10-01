@@ -21,4 +21,17 @@
       }
     });
   });
+
+  // Open a collapsed <details> block (e.g. an earlier event on the Events page)
+  // when a link points at it, such as /events/#latest-report
+  function openTargetDetails() {
+    if (!window.location.hash) return;
+    var target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+    if (target && target.tagName === "DETAILS") {
+      target.open = true;
+      target.scrollIntoView();
+    }
+  }
+  document.addEventListener("DOMContentLoaded", openTargetDetails);
+  window.addEventListener("hashchange", openTargetDetails);
 </script>
