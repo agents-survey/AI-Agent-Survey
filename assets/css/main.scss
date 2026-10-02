@@ -1348,3 +1348,46 @@ body {
     }
   }
 }
+
+// Name of someone without a profile link: same look as the linked names
+.team-list__name {
+  color: $berkeley-blue;
+  font-weight: 600;
+}
+
+// Small pill next to a project co-lead's name
+.co-lead-badge {
+  display: inline-block;
+  margin-left: 0.25rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 20px;
+  background: $california-gold;
+  color: $berkeley-blue;
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+// Former collaborators: one collapsible row, same look as the earlier events
+.alumni {
+  margin-bottom: $section-space;
+
+  &__body {
+    padding: 1.5rem;
+
+    > p {
+      margin: 0 0 1rem;
+    }
+  }
+
+  &__list {
+    columns: 2 260px;
+    column-gap: 2rem;
+
+    li {
+      break-inside: avoid;
+    }
+  }
+}
