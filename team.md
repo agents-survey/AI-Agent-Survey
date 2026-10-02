@@ -37,7 +37,7 @@ permalink: /team/
         <h4>Researchers</h4>
         <ul class="team-list">
           <li><a href="https://scholar.google.com/citations?user=R_1o4RIAAAAJ" target="_blank" rel="noopener">Negar Arabzadeh</a> <span class="co-lead-badge">Co-lead</span> - Postdoctoral Researcher, EECS</li>
-          <li><a href="https://www.linkedin.com/in/mmlee/" target="_blank" rel="noopener">Meredith Lee</a> <span class="co-lead-badge">Co-lead</span> - Affiliate Researcher, CDSS</li>
+          <li><a href="https://www.linkedin.com/in/mmlee/" target="_blank" rel="noopener">Meredith Lee</a> <span class="co-lead-badge">Co-lead</span> - Chief Tech Innovation Officer, CDSS</li>
         </ul>
       </div>
 
