@@ -1285,20 +1285,25 @@ body {
 // 10. Team page
 // =============================================================================
 
-// Columns instead of a grid, so short cards don't stretch to the tallest one
+// Two columns: UC Berkeley on the left, the other institutions stacked on the right.
+// Each column is its own stack, so short cards don't stretch to the tallest one.
 .team-grid {
-  columns: 2 300px;
-  column-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  align-items: start;
+  gap: 2rem;
   margin-bottom: $section-space;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .institution-section {
   @include white-card;
   padding: 1.75rem;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 2rem;
-  break-inside: avoid;
 
   h3 {
     margin: 0 0 1rem;
@@ -1332,8 +1337,12 @@ body {
   margin: 0;
 
   li {
-    margin-bottom: 0.5rem;
-    padding: 0.25rem 0;
+    margin-bottom: 0.75rem;
+    line-height: 1.35;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   a,
@@ -1345,6 +1354,49 @@ body {
     &:hover {
       color: $blue-medium;
       text-decoration: underline;
+    }
+  }
+}
+
+// Name of someone without a profile link: same look as the linked names
+.team-list__name {
+  color: $berkeley-blue;
+  font-weight: 600;
+}
+
+// Small pill next to a project co-lead's name
+.co-lead-badge {
+  display: inline-block;
+  margin-left: 0.25rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 20px;
+  background: $california-gold;
+  color: $berkeley-blue;
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+// Former collaborators: one collapsible row, same look as the earlier events
+.alumni {
+  margin-bottom: $section-space;
+
+  &__body {
+    padding: 1.5rem;
+
+    > p {
+      margin: 0 0 1rem;
+    }
+  }
+
+  &__list {
+    columns: 2 260px;
+    column-gap: 2rem;
+
+    li {
+      break-inside: avoid;
     }
   }
 }
