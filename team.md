@@ -18,100 +18,104 @@ permalink: /team/
 
 <div class="team-grid">
 
-  <div class="institution-section">
-    <h3><i class="fas fa-university"></i> UC Berkeley</h3>
+  <div class="team-grid__column">
+    <div class="institution-section">
+      <h3><i class="fas fa-university"></i> UC Berkeley</h3>
 
-    <div class="team-category">
-      <h4>Faculty</h4>
-      <ul class="team-list">
-        <li><a href="https://people.eecs.berkeley.edu/~jegonzal/" target="_blank" rel="noopener">Joseph Gonzalez</a> - Professor, EECS</li>
-        <li><a href="https://people.eecs.berkeley.edu/~ksen/" target="_blank" rel="noopener">Koushik Sen</a> - Professor, EECS</li>
-        <li><a href="https://people.eecs.berkeley.edu/~dawnsong/" target="_blank" rel="noopener">Dawn Song</a> - Professor, EECS</li>
-        <li><a href="https://people.eecs.berkeley.edu/~istoica/" target="_blank" rel="noopener">Ion Stoica</a> - Professor, EECS</li>
-        <li><a href="https://people.eecs.berkeley.edu/~matei/" target="_blank" rel="noopener">Matei Zaharia</a> <span class="co-lead-badge">Co-lead</span> - Professor, EECS</li>
-      </ul>
-    </div>
+      <div class="team-category">
+        <h4>Faculty</h4>
+        <ul class="team-list">
+          <li><a href="https://people.eecs.berkeley.edu/~jegonzal/" target="_blank" rel="noopener">Joseph Gonzalez</a> - Professor, EECS</li>
+          <li><a href="https://people.eecs.berkeley.edu/~ksen/" target="_blank" rel="noopener">Koushik Sen</a> - Professor, EECS</li>
+          <li><a href="https://people.eecs.berkeley.edu/~dawnsong/" target="_blank" rel="noopener">Dawn Song</a> - Professor, EECS</li>
+          <li><a href="https://people.eecs.berkeley.edu/~istoica/" target="_blank" rel="noopener">Ion Stoica</a> - Professor, EECS</li>
+          <li><a href="https://people.eecs.berkeley.edu/~matei/" target="_blank" rel="noopener">Matei Zaharia</a> <span class="co-lead-badge">Co-lead</span> - Professor, EECS</li>
+        </ul>
+      </div>
 
-    <div class="team-category">
-      <h4>Researchers</h4>
-      <ul class="team-list">
-        <li><a href="https://scholar.google.com/citations?user=R_1o4RIAAAAJ" target="_blank" rel="noopener">Negar Arabzadeh</a> <span class="co-lead-badge">Co-lead</span> - Postdoctoral Researcher, EECS</li>
-        <li><a href="https://www.linkedin.com/in/mmlee/" target="_blank" rel="noopener">Meredith Lee</a> <span class="co-lead-badge">Co-lead</span> - Affiliate Researcher, CDSS</li>
-      </ul>
-    </div>
+      <div class="team-category">
+        <h4>Researchers</h4>
+        <ul class="team-list">
+          <li><a href="https://scholar.google.com/citations?user=R_1o4RIAAAAJ" target="_blank" rel="noopener">Negar Arabzadeh</a> <span class="co-lead-badge">Co-lead</span> - Postdoctoral Researcher, EECS</li>
+          <li><a href="https://www.linkedin.com/in/mmlee/" target="_blank" rel="noopener">Meredith Lee</a> <span class="co-lead-badge">Co-lead</span> - Affiliate Researcher, CDSS</li>
+        </ul>
+      </div>
 
-    <div class="team-category">
-      <h4>Graduate Students</h4>
-      <ul class="team-list">
-        <li><a href="https://www.linkedin.com/in/mert-cemri-4a727913a/" target="_blank" rel="noopener">Mert Cemri</a> - Graduate Student, EECS</li>
-        <li><a href="https://www.linkedin.com/in/yiweihou1/" target="_blank" rel="noopener">Yiwei Hou</a> - Graduate Student, EECS</li>
-        <li><a href="https://shulynnliu.com" target="_blank" rel="noopener">Shu Liu</a> - Graduate Student, EECS</li>
-        <li><a href="https://www.linkedin.com/in/huanzhi-mao-82975a22a/" target="_blank" rel="noopener">Huanzhi Mao</a> - Graduate Student, EECS</li>
-        <li><a href="https://www.linkedin.com/in/melissa-pan-zhiyang/" target="_blank" rel="noopener">Melissa Pan</a> - Graduate Student, EECS</li>
-        <li><a href="https://www.linkedin.com/in/tiannengshi/" target="_blank" rel="noopener">Tianneng Shi</a> - Graduate Student, EECS</li>
-        <li><a href="https://www.linkedin.com/in/yichuan-wang-7518b4225/" target="_blank" rel="noopener">Yichuan Wang</a> - Graduate Student, EECS</li>
-        <li><span class="team-list__name">Alexander Xiong</span> - Graduate Student, EECS</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="institution-section">
-    <h3><i class="fas fa-rocket"></i> Stanford</h3>
-
-    <div class="team-category">
-      <h4>Graduate Students</h4>
-      <ul class="team-list">
-        <li><a href="https://liana313.github.io" target="_blank" rel="noopener">Liana Patel</a> - PhD Student, CS</li>
-      </ul>
+      <div class="team-category">
+        <h4>Graduate Students</h4>
+        <ul class="team-list">
+          <li><a href="https://www.linkedin.com/in/mert-cemri-4a727913a/" target="_blank" rel="noopener">Mert Cemri</a> - Graduate Student, EECS</li>
+          <li><a href="https://www.linkedin.com/in/yiweihou1/" target="_blank" rel="noopener">Yiwei Hou</a> - Graduate Student, EECS</li>
+          <li><a href="https://shulynnliu.com" target="_blank" rel="noopener">Shu Liu</a> - Graduate Student, EECS</li>
+          <li><a href="https://www.linkedin.com/in/huanzhi-mao-82975a22a/" target="_blank" rel="noopener">Huanzhi Mao</a> - Graduate Student, EECS</li>
+          <li><a href="https://www.linkedin.com/in/melissa-pan-zhiyang/" target="_blank" rel="noopener">Melissa Pan</a> - Graduate Student, EECS</li>
+          <li><a href="https://www.linkedin.com/in/tiannengshi/" target="_blank" rel="noopener">Tianneng Shi</a> - Graduate Student, EECS</li>
+          <li><a href="https://www.linkedin.com/in/yichuan-wang-7518b4225/" target="_blank" rel="noopener">Yichuan Wang</a> - Graduate Student, EECS</li>
+          <li><span class="team-list__name">Alexander Xiong</span> - Graduate Student, EECS</li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class="institution-section">
-    <h3><i class="fas fa-microchip"></i> IBM Research</h3>
+  <div class="team-grid__column">
+    <div class="institution-section">
+      <h3><i class="fas fa-university"></i> Stanford</h3>
 
-    <div class="team-category">
-      <h4>Research Scientists</h4>
-      <ul class="team-list">
-        <li><a href="https://www.linkedin.com/in/marquita-ellis-97509439/" target="_blank" rel="noopener">Marquita Ellis</a> <span class="co-lead-badge">Co-lead</span> - Staff Research Scientist, IBM Research</li>
-        <li><a href="https://www.linkedin.com/in/paul-castro-16bab81/" target="_blank" rel="noopener">Paul Castro</a> - Senior Research Manager, IBM Research</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="institution-section">
-    <h3><i class="fas fa-building"></i> Intesa Sanpaolo</h3>
-
-    <div class="team-category">
-      <h4>Visiting Scholars</h4>
-      <ul class="team-list">
-        <li><a href="https://www.linkedin.com/in/andrea-ermellino/" target="_blank" rel="noopener">Andrea Ermellino</a> - Data Scientist</li>
-        <li><a href="https://www.linkedin.com/in/stella-rubini-a65241213/" target="_blank" rel="noopener">Stella Rubini</a> - Data Scientist</li>
-      </ul>
+      <div class="team-category">
+        <h4>Graduate Students</h4>
+        <ul class="team-list">
+          <li><a href="https://liana313.github.io" target="_blank" rel="noopener">Liana Patel</a> - PhD Student, CS</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="team-category">
-      <h4>Former Visiting Scholar</h4>
-      <ul class="team-list">
-        <li><a href="https://www.linkedin.com/in/shuyiyang/" target="_blank" rel="noopener">Shuyi Yang</a> - Head of GenAI &amp; ML Engineering</li>
-      </ul>
+    <div class="institution-section">
+      <h3><i class="fas fa-university"></i> UIUC</h3>
+
+      <div class="team-category">
+        <h4>Faculty</h4>
+        <ul class="team-list">
+          <li><a href="https://ddkang.github.io" target="_blank" rel="noopener">Daniel Kang</a> - Assistant Professor, CS</li>
+        </ul>
+      </div>
+
+      <div class="team-category">
+        <h4>Graduate Students</h4>
+        <ul class="team-list">
+          <li><a href="https://www.linkedin.com/in/yuxuan-zhu-7147bb225/" target="_blank" rel="noopener">Yuxuan Zhu</a> - Graduate Student, CS</li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="institution-section">
-    <h3><i class="fas fa-graduation-cap"></i> UIUC</h3>
+    <div class="institution-section">
+      <h3><i class="fas fa-building"></i> IBM Research</h3>
 
-    <div class="team-category">
-      <h4>Faculty</h4>
-      <ul class="team-list">
-        <li><a href="https://ddkang.github.io" target="_blank" rel="noopener">Daniel Kang</a> - Assistant Professor, CS</li>
-      </ul>
+      <div class="team-category">
+        <h4>Research Scientists</h4>
+        <ul class="team-list">
+          <li><a href="https://www.linkedin.com/in/marquita-ellis-97509439/" target="_blank" rel="noopener">Marquita Ellis</a> <span class="co-lead-badge">Co-lead</span> - Staff Research Scientist</li>
+          <li><a href="https://www.linkedin.com/in/paul-castro-16bab81/" target="_blank" rel="noopener">Paul Castro</a> - Senior Research Manager</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="team-category">
-      <h4>Graduate Students</h4>
-      <ul class="team-list">
-        <li><a href="https://www.linkedin.com/in/yuxuan-zhu-7147bb225/" target="_blank" rel="noopener">Yuxuan Zhu</a> - Graduate Student, CS</li>
-      </ul>
+    <div class="institution-section">
+      <h3><i class="fas fa-building"></i> Intesa Sanpaolo</h3>
+
+      <div class="team-category">
+        <h4>Visiting Scholars</h4>
+        <ul class="team-list">
+          <li><a href="https://www.linkedin.com/in/andrea-ermellino/" target="_blank" rel="noopener">Andrea Ermellino</a> - Data Scientist</li>
+          <li><a href="https://www.linkedin.com/in/stella-rubini-a65241213/" target="_blank" rel="noopener">Stella Rubini</a> - Data Scientist</li>
+        </ul>
+      </div>
+
+      <div class="team-category">
+        <h4>Former Visiting Scholar</h4>
+        <ul class="team-list">
+          <li><a href="https://www.linkedin.com/in/shuyiyang/" target="_blank" rel="noopener">Shuyi Yang</a> - Head of GenAI &amp; ML Engineering</li>
+        </ul>
+      </div>
     </div>
   </div>
 

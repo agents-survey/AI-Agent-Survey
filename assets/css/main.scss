@@ -1285,20 +1285,25 @@ body {
 // 10. Team page
 // =============================================================================
 
-// Columns instead of a grid, so short cards don't stretch to the tallest one
+// Two columns: UC Berkeley on the left, the other institutions stacked on the right.
+// Each column is its own stack, so short cards don't stretch to the tallest one.
 .team-grid {
-  columns: 2 300px;
-  column-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  align-items: start;
+  gap: 2rem;
   margin-bottom: $section-space;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .institution-section {
   @include white-card;
   padding: 1.75rem;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 2rem;
-  break-inside: avoid;
 
   h3 {
     margin: 0 0 1rem;
@@ -1332,8 +1337,12 @@ body {
   margin: 0;
 
   li {
-    margin-bottom: 0.5rem;
-    padding: 0.25rem 0;
+    margin-bottom: 0.75rem;
+    line-height: 1.35;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   a,
